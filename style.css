@@ -1,0 +1,940 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+}
+.text_align {
+  text-align: center;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+}
+h1 {
+  font-size: 25px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 20px;
+}
+
+/* custom css */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.background_viedo {
+  height: 100vh;
+  background: url("./assets/banner.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.parashoot5 {
+  transform: scale(1);
+  top: -30%;
+  position: absolute;
+  right: 15%;
+  width: 140px;
+  height: 140px;
+  animation: parshoot5move 20s linear infinite;
+  opacity: 0.6;
+}
+.parashoot4 {
+  transform: scale(1);
+  top: 0%;
+  position: absolute;
+  right: 0%;
+  width: 250px;
+  height: 250px;
+  animation: parshoot4move 20s linear infinite;
+  opacity: 0.4;
+}
+.parashoot3 {
+  transform: scale(1);
+  top: 10%;
+  position: absolute;
+  right: 20%;
+  width: 250px;
+  height: 250px;
+  animation: parshoot3move 20s linear infinite;
+  opacity: 0.4;
+}
+.parashoot2 {
+  transform: scale(1);
+  top: 0%;
+  position: absolute;
+  left: 10%;
+  width: 180px;
+  height: 180px;
+  animation: parshoot2move 20s linear infinite;
+  opacity: 0.6;
+}
+.parashoot {
+  transform: scale(1);
+  top: -30%;
+  position: absolute;
+  left: 35%;
+  width: 130px;
+  height: 130px;
+  animation: parshoot1move 20s linear infinite;
+  opacity: 0.6;
+}
+
+/* key frames */
+@keyframes parshoot5move {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    top: 120%;
+  }
+}
+@keyframes parshoot4move {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    right: 120%;
+  }
+}
+@keyframes parshoot3move {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    right: 120%;
+  }
+}
+@keyframes parshoot2move {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    top: 120%;
+  }
+}
+@keyframes parshoot1move {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    top: 120%;
+  }
+}
+
+/* BANNER SECTION */
+.banner_heading {
+  position: absolute;
+  width: 100%;
+  top: 34.5%;
+  font-size: 44px;
+  letter-spacing: 34px;
+  color: #003554;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 800;
+}
+.banner_subheading {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  color: white;
+  letter-spacing: 29px;
+  font-size: 30px;
+}
+.banner_para {
+  color: #959595;
+  position: absolute;
+  bottom: 13%;
+  width: 100%;
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+.welcome {
+  background: url("./assets/WELCOME.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+
+.welcome_text {
+  line-height: 22px;
+  font-size: 16px;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  color: #ffffff;
+  max-width: 400px;
+}
+.bgmi_about {
+  background-color: black;
+  color: white;
+}
+
+.about_left {
+  flex: 0 1 40%;
+}
+.stone_div {
+  position: relative;
+}
+.about_right {
+  flex: 0 1 49%;
+  position: relative;
+  padding: 100px 0px 0px 20px;
+}
+.gradient {
+  width: 100%;
+  position: absolute;
+  background-image: radial-gradient(transparent, black 70%, black);
+  height: 100%;
+}
+.gradient2 {
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(transparent, black 100%, black);
+  /* border: 2px solid white; */
+  height: 85%;
+}
+.gradient3 {
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(transparent, black 55%, black);
+  /* border: 2px solid white; */
+  /* width: 900px; */
+  height: 40%;
+  top: 58%;
+  /* left: 23%; */
+ 
+}
+.bullets {
+  position: absolute;
+  top: 22%;
+  left: 23%;
+  opacity: 0.8;
+}
+.about_alignment {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about_heading {
+  margin-bottom: 12px;
+}
+.scope {
+  background-color: black;
+  color: white;
+  padding-top: 50px;
+}
+.scope_div {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.scope_heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.direction_indicator {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 0px;
+}
+.back_img {
+  background: url("./assets/back_img.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  position: relative;
+}
+.scope_parashoot {
+  width: 170px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  opacity: 0.7;
+}
+.scope_target {
+  width: 380px;
+  position: absolute;
+  top: 30.3%;
+  left: 37.5%;
+  opacity: 0.8;
+}
+.scope_back_img {
+  position: absolute;
+  top: 15%;
+  left: 22%;
+  width: 350px;
+  height: 350px;
+}
+.scope_line {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 15%;
+  left: 18%;
+}
+.scope_line_red_dot {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 44%;
+  left: 49.8%;
+  background-color: rgba(255, 0, 0, 0.688);
+  border-radius: 50%;
+}
+.scope_target_text {
+  width: 70px;
+  position: absolute;
+  bottom: 17%;
+  left: 42%;
+  color: red;
+  font-size: 19px;
+  font-weight: 700;
+}
+.scope_target_timmer {
+  position: absolute;
+  top: 28%;
+  right: 16%;
+  width: 100px;
+  font-size: 20px;
+}
+.main_bullet_mark_div {
+  position: absolute;
+  top: 30%;
+  left: 31%;
+}
+.bullet_mark {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 26px 18px 10px 10px;
+  width: 130px;
+  height: 130px;
+  background-color: #ffffff3d;
+}
+.main_clock_div {
+  position: absolute;
+  top: 47%;
+  left: 22%;
+  gap: 15px;
+  align-items: center;
+}
+.clock {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff52;
+}
+.scope_text {
+  display: flex;
+  max-width: 600px;
+  font-size: 19px;
+  margin: 0 auto;
+}
+.guns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.gun {
+  width: 200px;
+  height: 200px;
+}
+.flex_icon {
+  display: flex;
+  flex-direction: column;
+}
+.main_exciting_div {
+  position: absolute;
+  bottom: 10%;
+  left: 27%;
+  gap: 12px;
+  width: 100px;
+  align-items: center;
+}
+.exciting {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff52;
+}
+.main_seamless_div {
+  position: absolute;
+  top: 33%;
+  right: 22%;
+  width: 100px;
+  gap: 12px;
+  align-items: center;
+}
+.seamless {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff52;
+}
+.main_down_person_div {
+  position: absolute;
+  bottom: 37%;
+  right: 28%;
+  width: 100px;
+  gap: 12px;
+  align-items: center;
+}
+.down_person {
+  border-radius: 50px;
+  padding: 12px;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff52;
+}
+.main_cash_prize_div {
+  position: absolute;
+  bottom: 13%;
+  right: 25%;
+  width: 100px;
+  gap: 12px;
+  align-items: center;
+}
+.cash_prize {
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff52;
+}
+.map {
+  background-color: black;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.map_img {
+  background-color: black;
+  color: white;
+  padding-top: 50px;
+  background: url("./assets/BG\ MAP.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 80vh;
+  position: relative;
+}
+.map_line {
+  position: absolute;
+  width: 1100px;
+  top: 29%;
+  left: 15%;
+}
+.red_circle {
+  position: absolute;
+  width: 50px;
+  top: 34%;
+  left: 50%;
+}
+.location_mark {
+  position: absolute;
+  width: 20px;
+  top: 42%;
+  left: 62.5%;
+}
+.circle_location_mark {
+  border: 1px solid white;
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
+  padding: 20px;
+  position: absolute;
+  bottom: 40%;
+  left: 24.5%;
+}
+.red_circle_location_mark {
+  border: 1px solid white;
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
+  padding: 20px;
+  position: absolute;
+  top: 14%;
+  left: 13%;
+  background-color: #ff01017a;
+}
+.sign_up_text {
+  font-size: 26px;
+  position: absolute;
+  top: 25%;
+  left: 12%;
+}
+.circle_playwin_location_mark {
+  border: 1px solid white;
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
+  padding: 20px;
+  position: absolute;
+  bottom: 51%;
+  right: 18%;
+}
+.redeem_text {
+  font-size: 25px;
+  position: absolute;
+  bottom: 35%;
+  left: 21%;
+}
+.play_text {
+  font-size: 25px;
+  position: absolute;
+  bottom: 46%;
+  right: 17%;
+}
+.location_mark3 {
+  width: 25px;
+  position: absolute;
+  top: 27%;
+  right: 26%;
+  opacity: 0.5;
+}
+.location_mark4 {
+  width: 25px;
+  position: absolute;
+  bottom: 27%;
+  left: 10%;
+  opacity: 0.5;
+}
+.map_text {
+  font-size: 18px;
+}
+.timer_section {
+  background: url("./assets/timmer section image.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+.timer_div {
+  max-width: 500px;
+  position: absolute;
+  top: 30%;
+  right: 17%;
+}
+.timer_heading {
+  font-size: 40px;
+}
+.timer_desc {
+  font-size: 50px;
+  font-weight: 600;
+}
+#demo {
+  font-size: 50px;
+  margin: 24px 0px;
+  font-weight: 600;
+}
+.car_img {
+  width: 500px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+}
+footer {
+  padding: 50px 0px;
+  background-color: black;
+}
+.footer_text {
+  text-align: center;
+  color: white;
+}
+.timer_parashoot1 {
+  width: 150px;
+  position: absolute;
+  top: 17%;
+  left: 40%;
+  opacity: 0.6;
+}
+.timer_parashoot2 {
+  width: 150px;
+  position: absolute;
+  top: 7%;
+  right: 20%;
+  opacity: 0.6;
+}
+
+.dropBox {
+  transform: scale(1);
+  position: absolute;
+  left: 5%;
+  width: 400px;
+  height: 400px;
+  animation: dropBox 5s;
+  animation-fill-mode: forwards;
+  opacity: 0.3;
+}
+@keyframes dropBox {
+  0% {
+    transform: scale(1);
+    top: -40%;
+  }
+  100% {
+    transform: scale(1);
+    top: 50%;
+  }
+}
+.scope_back_img {
+  display: none;
+}
+
+.hover-icons:hover {
+  background-color: rgb(5, 4, 65);
+}
+.smoke_effect {
+  width: 100px;
+  position: absolute;
+  opacity: 0.3;
+}
+
+
+.backimga {
+  -webkit-mask-image: url("./assets/bg circle.svg");
+  -webkit-mask-size: 300px 300px;
+  -webkit-mask-position: center;
+  -webkit-mask-mode: alpha;
+  -webkit-mask-repeat: no-repeat;
+  opacity: 0.4;
+}
+.backimga img:hover {
+  transform: scale(1);
+  cursor: pointer;
+  animation: imgHover 5s linear infinite;
+}
+
+.bags_hel{
+  position: absolute;
+  right: 2%;
+  top: 45%;
+  width: 300px;
+  opacity: 0.7;
+ 
+}
+
+@keyframes imgHover {
+  0% {
+    transform: scale(1.5);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .about_left,.bullets,.gradient2,.backimga,.map,.timer_parashoot2{
+    display: none;
+  }
+  .background_viedo{
+    background: url('./assets/tablet banner.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .banner_heading{
+    top: 41.5%;
+    font-size: 30px;
+  }
+  .gradient {
+    background-image: radial-gradient(transparent, black 75%, black);
+  }
+  .welcome {
+    height: 50vh;
+  }
+  .welcome_text {
+    left: 25%;
+  }
+  .about_right{
+    flex:0 1 100%;
+  }
+  .about_alignment{ 
+    text-align: center;
+    padding: 0px 30px;
+  }
+  .stone_div{
+    opacity: 0.5;
+  }
+  .back_img {
+    background-size: auto;
+  }
+  .scope_div{
+    padding: 0px 30px;
+  }
+  .scope_target{
+    width: 350px;
+    left: 28%;
+  }
+  .scope_line{
+    width: 190px;
+    top: 12%;
+    left: 23%;
+  }
+  .scope_line_red_dot{
+    left: 49%;
+  }
+  .main_clock_div{
+    left: 12%;
+  }
+  .main_exciting_div{
+    bottom: 18%;
+    left: 20%;
+  }
+  .main_seamless_div{
+    top: 26%;
+    right: 13%;
+  }
+  .main_down_person_div{
+    bottom: 43%;
+    right: 10%;
+  }
+  .main_cash_prize_div{
+    bottom: 19%;
+    right: 19%;
+  }
+  .main_bullet_mark_div{
+    left: 20%;
+    top: 20%;
+  }
+  .scope_back_img{
+    display: block; 
+    width: 280px;
+    top: 0;
+    left: 10%;
+  }
+  .direction_indicator{
+    width: 650px;
+  }
+  .timer_section{
+    background-size: auto;
+    height: 70vh;
+  }
+  .timer_parashoot1{
+    top: 25%;
+    left: 30%;
+  }
+  .timer_div{
+    top: 20%;
+    left: 10%;
+  }
+  .timer_heading{
+    font-size: 25px;
+  }
+  .timer_desc{
+    font-size: 27px;
+  }
+  #demo{
+    font-size: 25px;
+  }
+  .car_img{
+    width: 400px;
+  }
+  .gradient3{
+    top: 44%;
+  }
+  .bags_hel{
+    width: 220px;
+    top: 72%;
+    left: 39%;
+    opacity: 0.6;
+  }
+}
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .parashoot,
+  .parashoot2,
+  .parashoot3,
+  .parashoot4,
+  .parashoot5,
+  .banner_heading,
+  .banner_subheading,
+  .banner_para,
+  .main_clock_div,
+  .main_exciting_div,
+  .scope_target_text,
+  .main_seamless_div,
+  .main_down_person_div,
+  .main_cash_prize_div,
+  .main_bullet_mark_div,
+  .direction_indicator,
+  .map,
+  .timer_parashoot2,
+  .backimga {
+    display: none;
+  }
+  .background_viedo {
+    background: url("./assets/Banner for mobile 1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .welcome {
+    object-fit: cover;
+    height: 33vh;
+  }
+  .welcome_text {
+    left: 0;
+    top: 22%;
+    padding: 10px;
+    display: none;
+  }
+  .bgmi_about {
+    flex-direction: column-reverse;
+    padding-top: 20px;
+  }
+  .about_alignment {
+    padding: 0px 16px;
+    text-align: center;
+  }
+  .about_heading,
+  .scope_heading {
+    font-size: 20px;
+  }
+  .about_text {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .bullets {
+    left: 0;
+    top: 40%;
+
+  }
+  .gradient {
+    background-image: radial-gradient(transparent, black 90%, black);
+  }
+  .stone_div {
+    padding-top: 60px;
+  }
+  .scope_div {
+    padding: 10px;
+  }
+  .back_img {
+    background-size: auto;
+  }
+  .scope_target {
+    left: 18%;
+    width: 270px;
+  }
+  .scope_back_img {
+    display: block;
+    top: -14%;
+    left: 10%;
+    width: 220px;
+  }
+  .scope_line {
+    width: 160px;
+    top: 3%;
+    left: 21%;
+  }
+  .scope_line_red_dot {
+    width: 6px;
+    height: 7px;
+    top: 45%;
+    left: 49.8%;
+  }
+  .direction_indicator {
+    width: 320px;
+  }
+  .scope_target_timmer {
+    font-size: 13px;
+    left: 58%;
+  }
+  .guns_bags {
+    left: 4%;
+    bottom: 17%;
+    opacity: 0.6;
+  }
+  .scope_text {
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .guns {
+    flex-direction: column;
+    gap: 0;
+    height: 200px;
+  }
+  .timer_section {
+    background-size: auto;
+    height: 87vh;
+  }
+  .car_img {
+    width: 250px;
+    opacity: 0.8;
+  }
+  .timer_parashoot1 {
+    top: 8%;
+    left: 10%;
+    opacity: 0.7;
+  }
+  .timer_div {
+    top: 50%;
+  }
+  .timer_heading {
+    font-size: 20px;
+  }
+  .timer_desc {
+    font-size: 22px;
+  }
+  #demo {
+    font-size: 28px;
+  }
+  footer {
+    padding: 10px;
+    background-color: #0d1418;
+  }
+  .scope_parashoot{
+    top: 10%;
+  }
+  .gradient3{
+    top: 40%;
+    background-image: linear-gradient(transparent, black 60%, black);
+    height: 60vh;
+  }
+  .bags_hel{
+    width: 220px;
+    top: 75%;
+    left: 24%;
+  }
+}
+
