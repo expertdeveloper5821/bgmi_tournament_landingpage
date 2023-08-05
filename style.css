@@ -2,6 +2,7 @@
 
 body {
   font-family: "Nanum Gothic", sans-serif;
+  background-color: black;
 }
 * {
   margin: 0;
@@ -53,8 +54,9 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+ 
+ 
 }
-
 .parashoot5 {
   transform: scale(1);
   top: -30%;
@@ -208,6 +210,7 @@ img {
 }
 .stone_div {
   position: relative;
+ 
 }
 .about_right {
   flex: 0 1 49%;
@@ -224,19 +227,14 @@ img {
   width: 100%;
   position: absolute;
   background-image: linear-gradient(transparent, black 100%, black);
-  /* border: 2px solid white; */
-  height: 85%;
+  height: 95%;
 }
 .gradient3 {
   width: 100%;
   position: absolute;
   background-image: linear-gradient(transparent, black 55%, black);
-  /* border: 2px solid white; */
-  /* width: 900px; */
-  height: 40%;
-  top: 58%;
-  /* left: 23%; */
- 
+  height: 25%;
+  top: 72%;
 }
 .bullets {
   position: absolute;
@@ -287,8 +285,8 @@ img {
 .scope_target {
   width: 380px;
   position: absolute;
-  top: 30.3%;
-  left: 37.5%;
+  top: 34.8%;
+  left: 37.9%;
   opacity: 0.8;
 }
 .scope_back_img {
@@ -330,6 +328,10 @@ img {
   width: 100px;
   font-size: 20px;
 }
+
+.about_text{
+  line-height: 20px;
+}
 .main_bullet_mark_div {
   position: absolute;
   top: 30%;
@@ -343,6 +345,8 @@ img {
   height: 130px;
   background-color: #ffffff3d;
 }
+
+
 .main_clock_div {
   position: absolute;
   top: 47%;
@@ -370,7 +374,11 @@ img {
   align-items: center;
   gap: 20px;
 }
-.gun {
+.gun1 {
+  width: 200px;
+  height: 200px;
+}
+.gun2{
   width: 200px;
   height: 200px;
 }
@@ -472,8 +480,8 @@ img {
 .location_mark {
   position: absolute;
   width: 20px;
-  top: 42%;
-  left: 62.5%;
+  top: 44%;
+  left: 60.4%;
 }
 .circle_location_mark {
   border: 1px solid white;
@@ -483,7 +491,7 @@ img {
   padding: 20px;
   position: absolute;
   bottom: 40%;
-  left: 24.5%;
+  left: 24%;
 }
 .red_circle_location_mark {
   border: 1px solid white;
@@ -497,7 +505,7 @@ img {
   background-color: #ff01017a;
 }
 .sign_up_text {
-  font-size: 26px;
+  font-size: 20px;
   position: absolute;
   top: 25%;
   left: 12%;
@@ -509,20 +517,20 @@ img {
   border-radius: 50px;
   padding: 20px;
   position: absolute;
-  bottom: 51%;
-  right: 18%;
+  bottom: 50%;
+  right: 20.5%;
 }
 .redeem_text {
-  font-size: 25px;
+  font-size: 20px;
   position: absolute;
   bottom: 35%;
   left: 21%;
 }
 .play_text {
-  font-size: 25px;
+  font-size: 20px;
   position: absolute;
-  bottom: 46%;
-  right: 17%;
+  bottom: 45%;
+  right: 20%;
 }
 .location_mark3 {
   width: 25px;
@@ -600,9 +608,9 @@ footer {
 .dropBox {
   transform: scale(1);
   position: absolute;
-  left: 5%;
-  width: 400px;
-  height: 400px;
+  left: 12%;
+  width: 300px;
+  height: 300px;
   animation: dropBox 5s;
   animation-fill-mode: forwards;
   opacity: 0.3;
@@ -622,45 +630,156 @@ footer {
 }
 
 .hover-icons:hover {
-  background-color: rgb(5, 4, 65);
+  background-color: rgb(249, 142, 28);
 }
 .smoke_effect {
   width: 100px;
   position: absolute;
   opacity: 0.3;
 }
-
-
+.gradient4{
+  background-image: linear-gradient(black 70%,transparent );
+  position: absolute;
+  top: 0%;
+  height: 18%;
+  width: 100%;
+}
 .backimga {
   -webkit-mask-image: url("./assets/bg circle.svg");
   -webkit-mask-size: 300px 300px;
   -webkit-mask-position: center;
   -webkit-mask-mode: alpha;
   -webkit-mask-repeat: no-repeat;
-  opacity: 0.4;
+  opacity: 0.5;
+
 }
-.backimga img:hover {
+
+
+
+.backimga img{
+  width: 950px;
+  height: 900px;
   transform: scale(1);
   cursor: pointer;
-  animation: imgHover 5s linear infinite;
+  animation: imgHover 5s linear infinite ;
+}
+.gradient5 {
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(transparent, black 90%, black);
+  height: 100vh;
 }
 
 .bags_hel{
   position: absolute;
-  right: 2%;
-  top: 45%;
-  width: 300px;
-  opacity: 0.7;
+  right: 6%;
+  top: 47%;
+  width: 280px;
+  opacity: 0.4;
  
 }
 
 @keyframes imgHover {
   0% {
     transform: scale(1.5);
+    top: 120%;
   }
+  
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .about_left,.bullets,.gradient2,.backimga,.map,.timer_parashoot2{
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+  .backimga,.gradient5,.gradient4,.person_Img{
+    display: none;
+  }
+ 
+  .banner_heading{
+    top: 37%;
+    font-size: 28px;
+  }
+  .gradient2{
+    height: 70vh;
+  }
+  .direction_indicator{
+    width: 800px;
+  }
+  .scope_target{
+    top: 23%;
+    left: 32%;
+  }
+  .scope_back_img{
+    display: block;
+    width: 300px;
+    left: 11%;
+    top: 4%;
+  }
+  .main_clock_div{
+    left: 17%;
+  }
+  .main_exciting_div{
+    left: 23%;
+  }
+  .main_seamless_div{
+    top: 26%;
+    right: 17%;
+  }
+  .main_down_person_div{
+    right: 20%;
+  }
+  .main_cash_prize_div{
+    right: 17%;
+    bottom: 11%;
+  }
+  .main_bullet_mark_div{
+    left: 24%;
+    top: 16%;
+  }
+  .bags_hel{
+    width: 200px;
+  }
+  .map_line{
+    width: 760px;
+  }
+  .location_mark{
+  left: 64%;
+  top: 39%;
+  }
+  .sign_up_text{
+    left: 12.2%;
+    top: 27%;
+    font-size: 20px;
+  }
+  .circle_playwin_location_mark{
+    right: 16%;
+  }
+  .redeem_text{
+    font-size: 20px;
+  }
+  .play_text{
+    font-size: 20px;
+    right: 15%;
+  }
+  .circle_location_mark{
+    bottom: 43%;
+  }
+  .timer_section{
+    height: 80vh;
+  }
+  .timer_heading{
+    font-size: 24px;
+  }
+  .timer_desc{
+    font-size: 26px;
+  }
+  #demo{
+    font-size: 28px;
+  }
+  .car_img{
+    width: 300px;
+  }
+
+}
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .about_left,.bullets,.gradient2,.backimga,.map,.timer_parashoot2,.parashoot5,.parashoot,.parashoot3,.gradient5,.gradient4,.person_Img{
     display: none;
   }
   .background_viedo{
@@ -767,7 +886,7 @@ footer {
     width: 400px;
   }
   .gradient3{
-    top: 44%;
+    top:57%;
   }
   .bags_hel{
     width: 220px;
@@ -776,10 +895,7 @@ footer {
     opacity: 0.6;
   }
 }
-@media screen and (min-width:769px) and (max-width:1024px) {
 
-
-}
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .parashoot,
   .parashoot2,
@@ -797,11 +913,12 @@ footer {
   .main_cash_prize_div,
   .main_bullet_mark_div,
   .direction_indicator,
-  .map,
-  .timer_parashoot2,
-  .backimga {
+  .map,.gun2,
+  .timer_parashoot2,.person_Img,
+  .backimga,.gradient5,.gradient4 {
     display: none;
   }
+
   .background_viedo {
     background: url("./assets/Banner for mobile 1.svg");
     background-repeat: no-repeat;
@@ -832,7 +949,7 @@ footer {
   }
   .about_text {
     font-size: 13px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
   }
   .bullets {
     left: 0;
@@ -852,7 +969,7 @@ footer {
     background-size: auto;
   }
   .scope_target {
-    left: 18%;
+    left: 16%;
     width: 270px;
   }
   .scope_back_img {
@@ -896,11 +1013,12 @@ footer {
   }
   .timer_section {
     background-size: auto;
-    height: 87vh;
+    height: 83vh;
   }
   .car_img {
     width: 250px;
     opacity: 0.8;
+
   }
   .timer_parashoot1 {
     top: 8%;
