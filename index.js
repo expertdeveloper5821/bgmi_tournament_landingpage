@@ -1,6 +1,7 @@
 
 
 var countDownDate = new Date("Aug 15, 2023 15:37:25").getTime();
+console.log("%cWelcome to pattseheadshot", "color: green;", "CAPSCODE")
 var x = setInterval(function () {
   var now = new Date().getTime();
   var distance = countDownDate - now;
