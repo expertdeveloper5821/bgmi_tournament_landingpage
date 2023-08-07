@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   background-color: black;
 }
 * {
@@ -45,7 +45,10 @@ h3 {
 
 img {
   width: 100%;
-  height: auto;
+ 
+}
+.red_location,.red_location2,.red_location3{
+  display: none;
 }
 
 .background_viedo {
@@ -54,8 +57,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
- 
- 
+
 }
 .parashoot5 {
   transform: scale(1);
@@ -156,6 +158,7 @@ img {
 }
 
 /* BANNER SECTION */
+
 .banner_heading {
   position: absolute;
   width: 100%;
@@ -163,7 +166,6 @@ img {
   font-size: 44px;
   letter-spacing: 34px;
   color: #003554;
-  font-family: "Nanum Gothic", sans-serif;
   font-weight: 800;
 }
 .banner_subheading {
@@ -175,13 +177,16 @@ img {
   font-size: 30px;
 }
 .banner_para {
-  color: #959595;
+  font-weight: 700;
+  color: white;
   position: absolute;
   bottom: 13%;
   width: 100%;
   font-size: 30px;
   letter-spacing: 10px;
+  
 }
+
 .welcome {
   background: url("./assets/WELCOME.svg");
   background-repeat: no-repeat;
@@ -204,13 +209,14 @@ img {
   background-color: black;
   color: white;
 }
-
 .about_left {
   flex: 0 1 40%;
 }
-.stone_div {
+.stone_div{
   position: relative;
- 
+}
+.stone_div2{
+  position: relative;
 }
 .about_right {
   flex: 0 1 49%;
@@ -226,21 +232,21 @@ img {
 .gradient2 {
   width: 100%;
   position: absolute;
-  background-image: linear-gradient(transparent, black 100%, black);
-  height: 95%;
+  background-image: linear-gradient(transparent, black 80%, black);
+  height: 100vh;
 }
 .gradient3 {
   width: 100%;
   position: absolute;
-  background-image: linear-gradient(transparent, black 55%, black);
-  height: 25%;
-  top: 72%;
+  background-image: linear-gradient(transparent, black 60%, black);
+  height: 43%;
+  bottom: 0;
 }
 .bullets {
   position: absolute;
-  top: 22%;
+  top: 10%;
   left: 23%;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 .about_alignment {
   position: absolute;
@@ -249,6 +255,9 @@ img {
 }
 .about_heading {
   margin-bottom: 12px;
+  font-weight: 700;
+  color: #ffffff;
+
 }
 .scope {
   background-color: black;
@@ -260,18 +269,54 @@ img {
   margin: 0 auto;
 }
 .scope_heading {
+  font-weight: 700;
+  color: #ffffff;
   font-size: 30px;
   margin-bottom: 20px;
+}
+.scope_Para{
+  font-weight: 100;
 }
 .direction_indicator {
   max-width: 1100px;
   margin: 0 auto;
   padding: 70px 0px;
 }
-.back_img {
-  background: url("./assets/back_img.svg");
+.up_coming_heading{
+  margin: 0 auto;
+  max-width:700px ;
+  color: white;
+  margin-bottom: 40px;
+}
+.up_coming_matches{
+  margin-bottom: 30px;
+}
+.upComingHeading{
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #FF7A00;
+}
+.upComingPara{
+  font-weight: 100;
+  font-size: 16px;
+}
+.up_coming_matches{
+  
+  /* background-image: url("./assets/Banner\ for\ mobile\ 1.svg"); */
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+}
+.upcommingDiv{
+  margin: 0 auto;
+  
+
+ max-width: 1000px;
+}
+.back_img {
+  background: url("./assets/scope\ section\ banner.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 100vh;
   position: relative;
 }
@@ -321,7 +366,7 @@ img {
   font-size: 19px;
   font-weight: 700;
 }
-.scope_target_timmer {
+#scope_target_timmer {
   position: absolute;
   top: 28%;
   right: 16%;
@@ -330,39 +375,41 @@ img {
 }
 
 .about_text{
+  padding: 15px;
   line-height: 20px;
+  font-weight: 100;
 }
 .main_bullet_mark_div {
   position: absolute;
   top: 30%;
-  left: 31%;
+  left: 35%;
 }
 .bullet_mark {
   border: 2px solid white;
   border-radius: 50%;
   padding: 26px 18px 10px 10px;
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
   background-color: #ffffff3d;
 }
 
-
 .main_clock_div {
   position: absolute;
-  top: 47%;
-  left: 22%;
+  top: 52%;
+  left: 23%;
   gap: 15px;
   align-items: center;
 }
 .clock {
   border: 2px solid white;
   border-radius: 50px;
-  padding: 20px;
-  width: 80px;
-  height: 80px;
+  padding: 16px;
+  width: 70px;
+  height: 70px;
   background-color: #ffffff52;
 }
 .scope_text {
+  font-weight: 100;
   display: flex;
   max-width: 600px;
   font-size: 19px;
@@ -381,6 +428,7 @@ img {
 .gun2{
   width: 200px;
   height: 200px;
+  margin-top: 20px;
 }
 .flex_icon {
   display: flex;
@@ -397,9 +445,9 @@ img {
 .exciting {
   border: 2px solid white;
   border-radius: 50px;
-  padding: 20px;
-  width: 80px;
-  height: 80px;
+  padding: 16px;
+  width: 70px;
+  height: 70px;
   background-color: #ffffff52;
 }
 .main_seamless_div {
@@ -413,9 +461,9 @@ img {
 .seamless {
   border: 2px solid white;
   border-radius: 50px;
-  padding: 20px;
-  width: 80px;
-  height: 80px;
+  padding: 16px;
+  width: 70px;
+  height: 70px;
   background-color: #ffffff52;
 }
 .main_down_person_div {
@@ -435,8 +483,8 @@ img {
 }
 .main_cash_prize_div {
   position: absolute;
-  bottom: 13%;
-  right: 25%;
+  bottom: 10%;
+  right: 24%;
   width: 100px;
   gap: 12px;
   align-items: center;
@@ -444,9 +492,9 @@ img {
 .cash_prize {
   border: 2px solid white;
   border-radius: 50px;
-  padding: 20px;
-  width: 80px;
-  height: 80px;
+  padding: 16px;
+  width: 70px;
+  height: 70px;
   background-color: #ffffff52;
 }
 .map {
@@ -508,7 +556,7 @@ img {
   font-size: 20px;
   position: absolute;
   top: 25%;
-  left: 12%;
+  left: 13%;
 }
 .circle_playwin_location_mark {
   border: 1px solid white;
@@ -524,13 +572,13 @@ img {
   font-size: 20px;
   position: absolute;
   bottom: 35%;
-  left: 21%;
+  left: 23%;
 }
 .play_text {
   font-size: 20px;
   position: absolute;
   bottom: 45%;
-  right: 20%;
+  right: 18%;
 }
 .location_mark3 {
   width: 25px;
@@ -547,46 +595,55 @@ img {
   opacity: 0.5;
 }
 .map_text {
+  font-weight: 100;
   font-size: 18px;
 }
 .timer_section {
-  background: url("./assets/timmer section image.svg");
+  background: url("./assets/bg\ last\ section\ 1.svg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: contain;
   height: 100vh;
   color: white;
   position: relative;
 }
-.timer_div {
-  max-width: 500px;
-  position: absolute;
-  top: 30%;
-  right: 17%;
-}
 .timer_heading {
-  font-size: 40px;
+  position: absolute;
+  top: 10%;
+  left: 34%;
+  font-size: 34px;
 }
+.timer_div {
+  max-width: 700px;
+  position: absolute;
+  bottom: 0%;
+  right: 35%;
+  text-align: center;
+}
+
 .timer_desc {
-  font-size: 50px;
-  font-weight: 600;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 15px;
 }
 #demo {
-  font-size: 50px;
+  font-size: 36px;
   margin: 24px 0px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .car_img {
   width: 500px;
   position: absolute;
-  bottom: 0;
-  right: 0;
-  opacity: 0.5;
+  bottom: 16%;
+  left: 35%;
+  opacity: 0.7;
 }
 footer {
   padding: 50px 0px;
   background-color: black;
 }
 .footer_text {
+  font-weight: 100;
   text-align: center;
   color: white;
 }
@@ -609,11 +666,11 @@ footer {
   transform: scale(1);
   position: absolute;
   left: 12%;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   animation: dropBox 5s;
   animation-fill-mode: forwards;
-  opacity: 0.3;
+  opacity: 0.7;
 }
 @keyframes dropBox {
   0% {
@@ -650,12 +707,8 @@ footer {
   -webkit-mask-position: center;
   -webkit-mask-mode: alpha;
   -webkit-mask-repeat: no-repeat;
-  opacity: 0.5;
-
+  opacity: 0.8;
 }
-
-
-
 .backimga img{
   width: 950px;
   height: 900px;
@@ -666,32 +719,36 @@ footer {
 .gradient5 {
   width: 100%;
   position: absolute;
-  background-image: linear-gradient(transparent, black 90%, black);
+  background-image: linear-gradient(transparent, black 110%, black);
   height: 100vh;
 }
-
 .bags_hel{
   position: absolute;
   right: 6%;
   top: 47%;
   width: 280px;
   opacity: 0.4;
- 
 }
-
 @keyframes imgHover {
   0% {
     transform: scale(1.5);
     top: 120%;
   }
-  
 }
+.mobile_direction_indicator{
+  display: none;
+}
+/* @media screen and (min-width: 768px) {
+  .banner_heading{
+    top: 25%;
+  }
+} */
 
 @media screen and (min-width:769px) and (max-width:1024px) {
   .backimga,.gradient5,.gradient4,.person_Img{
     display: none;
   }
- 
+
   .banner_heading{
     top: 37%;
     font-size: 28px;
@@ -776,10 +833,10 @@ footer {
   .car_img{
     width: 300px;
   }
-
 }
-@media screen and (min-width: 481px) and (max-width: 769px) {
-  .about_left,.bullets,.gradient2,.backimga,.map,.timer_parashoot2,.parashoot5,.parashoot,.parashoot3,.gradient5,.gradient4,.person_Img{
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .about_left,.bullets,.gradient2,.backimga,.map,.timer_parashoot2,.parashoot5,.parashoot,.parashoot3,.gradient4,.person_Img{
     display: none;
   }
   .background_viedo{
@@ -812,7 +869,7 @@ footer {
     opacity: 0.5;
   }
   .back_img {
-    background-size: auto;
+    background-size: cover;
   }
   .scope_div{
     padding: 0px 30px;
@@ -862,28 +919,30 @@ footer {
     width: 650px;
   }
   .timer_section{
-    background-size: auto;
-    height: 70vh;
+    background-size: cover;
   }
   .timer_parashoot1{
     top: 25%;
     left: 30%;
   }
   .timer_div{
-    top: 20%;
-    left: 10%;
+    bottom: 0;
+    left: 20%;
+    width: 500px;
   }
   .timer_heading{
-    font-size: 25px;
+    font-size: 37px;
+    left: 21%;
   }
   .timer_desc{
-    font-size: 27px;
+    font-size: 28px;
   }
   #demo{
-    font-size: 25px;
+    font-size: 30px;
   }
   .car_img{
     width: 400px;
+    left: 27%;
   }
   .gradient3{
     top:57%;
@@ -897,30 +956,28 @@ footer {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .parashoot,
-  .parashoot2,
+  /* .parashoot, */
   .parashoot3,
+  .parashoot2,
   .parashoot4,
   .parashoot5,
-  .banner_heading,
-  .banner_subheading,
-  .banner_para,
   .main_clock_div,
-  .main_exciting_div,
   .scope_target_text,
-  .main_seamless_div,
+  .main_seamless_div,.sign_up_text,
   .main_down_person_div,
   .main_cash_prize_div,
-  .main_bullet_mark_div,
-  .direction_indicator,
-  .map,.gun2,
-  .timer_parashoot2,.person_Img,
-  .backimga,.gradient5,.gradient4 {
+  .direction_indicator,.map_line,
+ .gun2,.dropBox,.bags_hel,.timer_parashoot1,
+  .timer_parashoot2,.person_Img,.red_circle_location_mark,
+  .backimga,.location_mark4,.location_mark3,.location_mark,
+  .gradient5,.circle_playwin_location_mark,.play_text,
+  .gradient4
+   {
     display: none;
   }
 
   .background_viedo {
-    background: url("./assets/Banner for mobile 1.svg");
+    background: url("./assets/mobile\ banner\ 2.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -948,7 +1005,7 @@ footer {
     font-size: 20px;
   }
   .about_text {
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 0px;
   }
   .bullets {
@@ -963,10 +1020,13 @@ footer {
     padding-top: 60px;
   }
   .scope_div {
-    padding: 10px;
+    padding: 0px 28px;
   }
   .back_img {
-    background-size: auto;
+    background: url("./assets/scope\ new\ banner\ for\ mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .scope_target {
     left: 16%;
@@ -992,7 +1052,7 @@ footer {
   .direction_indicator {
     width: 320px;
   }
-  .scope_target_timmer {
+  #scope_target_timmer {
     font-size: 13px;
     left: 58%;
   }
@@ -1002,7 +1062,7 @@ footer {
     opacity: 0.6;
   }
   .scope_text {
-    padding: 10px;
+    padding: 0px 16px;
     font-size: 14px;
     letter-spacing: 1px;
   }
@@ -1013,12 +1073,12 @@ footer {
   }
   .timer_section {
     background-size: auto;
-    height: 83vh;
   }
   .car_img {
-    width: 250px;
+    width: 260px;
+    left: 18%;
     opacity: 0.8;
-
+    bottom:20% ;
   }
   .timer_parashoot1 {
     top: 8%;
@@ -1026,13 +1086,17 @@ footer {
     opacity: 0.7;
   }
   .timer_div {
-    top: 50%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
   .timer_heading {
-    font-size: 20px;
+    left: 11%;
+    font-size: 22px;
   }
   .timer_desc {
     font-size: 22px;
+    letter-spacing: 10px;
   }
   #demo {
     font-size: 28px;
@@ -1046,7 +1110,7 @@ footer {
   }
   .gradient3{
     top: 40%;
-    background-image: linear-gradient(transparent, black 60%, black);
+    background-image: linear-gradient(transparent, black 67%, black);
     height: 60vh;
   }
   .bags_hel{
@@ -1054,5 +1118,116 @@ footer {
     top: 75%;
     left: 24%;
   }
+  .gradient2{
+    background-image: linear-gradient(transparent, black 95%, black);
+  }
+  .banner_heading{
+    font-size: 18px;
+    letter-spacing: 8px;
+    top: 40%;
+    font-size: 22px;
+  }
+  .banner_subheading{
+    font-size: 18px;
+    letter-spacing: 6px;
+    top: 46%;
+  }
+  .banner_para{
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: 600;
+  }
+  .mobile_direction_indicator{
+    padding-top: 40px;
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+  }
+  .main_bullet_mark_div {
+    position: absolute;
+    top: 38%;
+    left: 13%;
+  }
+  .bullet_mark {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 18px 12px 6px 6px;
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff3d;
+  }
+  .main_exciting_div{
+    bottom: 2%;
+    left: 37%;
+  }
+  .exciting {
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 14px;
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff52;
+  }
+  .short_heading{
+    font-size: 14px;
+  }
+  .map_img{
+   background: url('./assets/mobile\ map\ img.svg');
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-position: center;
+  }
+  .red_circle{
+    width: 40px;
+    height: 40px;
+    top: 40%;
+    left: 38%;
+  }
+  .red_location{
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 28%;
+    top: 68%;
+  }
+  .red_location2{
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 54%;
+    top: 61.4%;
+  }
+  .red_location3{
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 68%;
+    top: 68%;
+  }
+  .circle_location_mark{
+    background-color:#ff000063;
+    left: 43%;
+    bottom: 36%;
+  }
+  .redeem_text{
+    bottom: 31%;
+    left: 32%;
+  }
+  .map_text{
+    margin-top: -20%;;
+  }
+  .timer_section{
+    background: url('./assets/bfg\ last\ section\ mobile\ 1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+.stone_div2{
+  width: 100%;
+  height: 100%;
+}
 }
 
