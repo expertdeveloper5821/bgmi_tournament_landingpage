@@ -109,13 +109,3 @@ observer.observe(dropBoxSection);
 
 
 
-const divs = document.querySelectorAll('.flex_icon');
-let currentIndex = 1;
-
-divs.forEach((div, index) => {
-  div.addEventListener('click', () => {
-    divs[currentIndex].classList.remove('active');
-    currentIndex = (index + 1) % divs.length;
-    divs[currentIndex].classList.add('active');
-  });
-});

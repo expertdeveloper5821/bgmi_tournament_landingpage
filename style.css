@@ -1318,17 +1318,8 @@ footer {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
-  .flex_icon {
-    display: none;
-    border: 1px solid white;
-  }
+
   
-  .active {
-    display: block;
-    border: 1px solid white;
-
-  }
-
   .parashoot,
   .parashoot3,
   .parashoot5,
