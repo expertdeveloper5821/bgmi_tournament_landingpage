@@ -927,7 +927,7 @@ footer {
 }
 
 .margen_left {
-  
+
   width: 500px;
 
   display: flex;
@@ -938,7 +938,7 @@ footer {
 
 
 .display {
-  
+
   display: flex;
   gap: 50px;
 }
@@ -1317,18 +1317,12 @@ footer {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-
-
-  
+  .main_bullet_mark_div,
   .parashoot,
   .parashoot3,
   .parashoot5,
-  .main_clock_div,
   .scope_target_text,
-  .main_seamless_div,
-  .sign_up_text,
   .main_down_person_div,
-  .main_cash_prize_div,
   .direction_indicator,
   .map_line,
   .gun2,
@@ -1336,17 +1330,12 @@ footer {
   .bags_hel,
   .timer_parashoot1,
   .timer_parashoot2,
-  .red_circle_location_mark,
   .location_mark4,
   .location_mark3,
   .location_mark,
-  .gradient5,
-  .circle_playwin_location_mark,
-  .play_text,
-  .gradient4 {
+  .gradient5 {
     display: none;
   }
-
   .background_viedo {
     background: url("./assets/mobile\ banner\ 2.svg");
     background-repeat: no-repeat;
@@ -1575,8 +1564,8 @@ footer {
     border: 2px solid white;
     border-radius: 50px;
     padding: 14px;
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     background-color: #ffffff52;
   }
 
@@ -1654,7 +1643,7 @@ footer {
   }
 
   .main_circle_location_mark {
-    bottom: 16%;
+    bottom: 19%;
     left: 39.4%;
 
   }
@@ -1679,6 +1668,62 @@ footer {
   .scope_img {
     width: 250px;
   }
+
+  .gradient4 {
+    top: 14%;
+  }
+
+  .clock,
+  .cash_prize,
+  .seamless {
+    width: 55px;
+    height: 55px;
+  }
+
+  .main_clock_div {
+    top: 24%;
+    left: 5%;
+  }
+
+  .main_seamless_div {
+    left: 38%;
+    top: 14%;
+  }
+
+  .main_cash_prize_div {
+    top: 24%;
+    right: 5%;
+  }
+
+  .main_circle_playwin_location_mark {
+    right: 10%;
+    bottom: 70%;
+    /* border: 2px solid white; */
+    width: 90px;
+    /* margin: 0; */
+  }
+
+  .circle_playwin_location_mark {
+    margin-left: 6px;
+  }
+
+  .main_red_circle_location_mark {
+    top: 15%;
+  }
+
+  .sign_up_text,
+  .redeem_text,
+  .play_text {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .red_circle_location_mark,.circle_playwin_location_mark,.circle_location_mark{
+    width: 55px;
+    height: 55px;
+    padding: 16px
+  }
+  .main_circle_playwin_location_mark{
+    right: 9%;
+    bottom: 68.4%;
+  }
 }
-
-
