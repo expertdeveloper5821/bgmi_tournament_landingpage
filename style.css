@@ -4,14 +4,17 @@ body {
   font-family: 'Gothic A1', sans-serif;
   background-color: black;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .flex {
   display: flex;
 }
+
 .text_align {
   text-align: center;
 }
@@ -21,18 +24,22 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 30px;
   width: 100%;
 }
+
 h1 {
   font-size: 25px;
 }
+
 h2 {
   font-size: 22px;
 }
+
 h3 {
   font-size: 20px;
 }
@@ -45,9 +52,12 @@ h3 {
 
 img {
   width: 100%;
- 
+
 }
-.red_location,.red_location2,.red_location3{
+
+.red_location,
+.red_location2,
+.red_location3 {
   display: none;
 }
 
@@ -59,6 +69,7 @@ img {
   background-position: center;
 
 }
+
 .parashoot5 {
   transform: scale(1);
   top: -30%;
@@ -69,6 +80,7 @@ img {
   animation: parshoot5move 20s linear infinite;
   opacity: 0.6;
 }
+
 .parashoot4 {
   transform: scale(1);
   top: 0%;
@@ -79,6 +91,7 @@ img {
   animation: parshoot4move 20s linear infinite;
   opacity: 0.4;
 }
+
 .parashoot3 {
   transform: scale(1);
   top: 10%;
@@ -89,6 +102,7 @@ img {
   animation: parshoot3move 20s linear infinite;
   opacity: 0.4;
 }
+
 .parashoot2 {
   transform: scale(1);
   top: 0%;
@@ -99,6 +113,7 @@ img {
   animation: parshoot2move 20s linear infinite;
   opacity: 0.6;
 }
+
 .parashoot {
   transform: scale(1);
   top: -30%;
@@ -115,42 +130,51 @@ img {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1);
     top: 120%;
   }
 }
+
 @keyframes parshoot4move {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1);
     right: 120%;
   }
 }
+
 @keyframes parshoot3move {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1);
     right: 120%;
   }
 }
+
 @keyframes parshoot2move {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1);
     top: 120%;
   }
 }
+
 @keyframes parshoot1move {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1);
     top: 120%;
@@ -168,6 +192,7 @@ img {
   color: #003554;
   font-weight: 800;
 }
+
 .banner_subheading {
   width: 100%;
   position: absolute;
@@ -176,6 +201,7 @@ img {
   letter-spacing: 29px;
   font-size: 30px;
 }
+
 .banner_para {
   font-weight: 700;
   color: white;
@@ -184,7 +210,7 @@ img {
   width: 100%;
   font-size: 30px;
   letter-spacing: 10px;
-  
+
 }
 
 .welcome {
@@ -204,115 +230,179 @@ img {
   left: 15%;
   color: #ffffff;
   max-width: 400px;
+  text-align: justify;
 }
+
 .bgmi_about {
   background-color: black;
   color: white;
 }
+
 .about_left {
   flex: 0 1 40%;
 }
-.stone_div{
+
+.stone_div {
   position: relative;
 }
-.stone_div2{
+
+.stone_div2 {
   position: relative;
 }
+
 .about_right {
   flex: 0 1 49%;
   position: relative;
   padding: 100px 0px 0px 20px;
 }
+
 .gradient {
   width: 100%;
   position: absolute;
   background-image: radial-gradient(transparent, black 70%, black);
   height: 100%;
 }
+
 .gradient2 {
   width: 100%;
   position: absolute;
   background-image: linear-gradient(transparent, black 80%, black);
   height: 100vh;
 }
+
 .gradient3 {
   width: 100%;
   position: absolute;
   background-image: linear-gradient(transparent, black 60%, black);
   height: 43%;
-  bottom: 0;
+  bottom: 0%;
+  /* border: 2px solid white; */
+  z-index: 1000;
 }
+
+.scope_img {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.scope_bg_img {
+  position: relative;
+  margin-top: 100px;
+}
+
+.bg_img_scale {
+  position: absolute;
+  z-index: 999;
+}
+
+.bg_img_static {
+  animation: scaleImg 5s infinite;
+
+}
+
+@keyframes scaleImg {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .bullets {
   position: absolute;
   top: 10%;
   left: 23%;
   /* opacity: 0.8; */
 }
+
 .about_alignment {
   position: absolute;
   top: 0;
   left: 0;
 }
+
 .about_heading {
   margin-bottom: 12px;
   font-weight: 700;
   color: #ffffff;
 
 }
+
 .scope {
   background-color: black;
   color: white;
   padding-top: 50px;
 }
+
 .scope_div {
   max-width: 780px;
   margin: 0 auto;
 }
+
 .scope_heading {
   font-weight: 700;
   color: #ffffff;
   font-size: 30px;
   margin-bottom: 20px;
 }
-.scope_Para{
+
+.scope_Para {
   font-weight: 100;
 }
+
 .direction_indicator {
   max-width: 1100px;
   margin: 0 auto;
   padding: 70px 0px;
 }
-.up_coming_heading{
+
+.up_coming_heading {
   margin: 0 auto;
-  max-width:700px ;
+  max-width: 700px;
   color: white;
   margin-bottom: 40px;
 }
-.up_coming_matches{
+
+.up_coming_matches {
   margin-bottom: 30px;
 }
-.upComingHeading{
+
+.upComingHeading {
   font-weight: 700;
   font-size: 30px;
   margin-bottom: 20px;
   color: #FF7A00;
 }
-.upComingPara{
+
+.upComingPara {
   font-weight: 100;
   font-size: 16px;
 }
-.up_coming_matches{
-  
+
+.up_coming_matches {
+
   /* background-image: url("./assets/Banner\ for\ mobile\ 1.svg"); */
   background-repeat: no-repeat;
   background-size: cover;
 }
-.upcommingDiv{
-  margin: 0 auto;
-  
 
- max-width: 1000px;
+.upcommingDiv {
+  margin: 0 auto;
+
+
+  max-width: 1000px;
 }
+
 .back_img {
   background: url("./assets/scope\ section\ banner.svg");
   background-repeat: no-repeat;
@@ -320,6 +410,7 @@ img {
   height: 100vh;
   position: relative;
 }
+
 .scope_parashoot {
   width: 170px;
   position: absolute;
@@ -327,6 +418,7 @@ img {
   left: 10%;
   opacity: 0.7;
 }
+
 .scope_target {
   width: 380px;
   position: absolute;
@@ -334,6 +426,7 @@ img {
   left: 37.9%;
   opacity: 0.8;
 }
+
 .scope_back_img {
   position: absolute;
   top: 15%;
@@ -341,31 +434,34 @@ img {
   width: 350px;
   height: 350px;
 }
+
 .scope_line {
-  width: 250px;
-  height: 250px;
+  width: 196px;
   position: absolute;
-  top: 15%;
-  left: 18%;
+  top: 17%;
+  left: 19%;
 }
+
 .scope_line_red_dot {
   width: 10px;
   height: 10px;
   position: absolute;
-  top: 44%;
-  left: 49.8%;
+  top: 49%;
+  left: 48.8%;
   background-color: rgba(255, 0, 0, 0.688);
   border-radius: 50%;
 }
+
 .scope_target_text {
   width: 70px;
   position: absolute;
-  bottom: 17%;
-  left: 42%;
+  bottom: 10%;
+  left: 40%;
   color: red;
-  font-size: 19px;
+  font-size: 14px;
   font-weight: 700;
 }
+
 #scope_target_timmer {
   position: absolute;
   top: 28%;
@@ -374,16 +470,19 @@ img {
   font-size: 20px;
 }
 
-.about_text{
+.about_text {
   padding: 15px;
   line-height: 20px;
   font-weight: 100;
+  text-align: justify;
 }
+
 .main_bullet_mark_div {
   position: absolute;
   top: 30%;
   left: 35%;
 }
+
 .bullet_mark {
   border: 2px solid white;
   border-radius: 50%;
@@ -391,6 +490,7 @@ img {
   width: 120px;
   height: 120px;
   background-color: #ffffff3d;
+  z-index: 1000;
 }
 
 .main_clock_div {
@@ -400,6 +500,7 @@ img {
   gap: 15px;
   align-items: center;
 }
+
 .clock {
   border: 2px solid white;
   border-radius: 50px;
@@ -408,6 +509,7 @@ img {
   height: 70px;
   background-color: #ffffff52;
 }
+
 .scope_text {
   font-weight: 100;
   display: flex;
@@ -415,25 +517,30 @@ img {
   font-size: 19px;
   margin: 0 auto;
 }
+
 .guns {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
+
 .gun1 {
   width: 200px;
   height: 200px;
 }
-.gun2{
+
+.gun2 {
   width: 200px;
   height: 200px;
   margin-top: 20px;
 }
+
 .flex_icon {
   display: flex;
   flex-direction: column;
 }
+
 .main_exciting_div {
   position: absolute;
   bottom: 10%;
@@ -441,7 +548,9 @@ img {
   gap: 12px;
   width: 100px;
   align-items: center;
+  z-index: 1000;
 }
+
 .exciting {
   border: 2px solid white;
   border-radius: 50px;
@@ -450,6 +559,7 @@ img {
   height: 70px;
   background-color: #ffffff52;
 }
+
 .main_seamless_div {
   position: absolute;
   top: 33%;
@@ -458,6 +568,7 @@ img {
   gap: 12px;
   align-items: center;
 }
+
 .seamless {
   border: 2px solid white;
   border-radius: 50px;
@@ -466,6 +577,7 @@ img {
   height: 70px;
   background-color: #ffffff52;
 }
+
 .main_down_person_div {
   position: absolute;
   bottom: 37%;
@@ -474,6 +586,7 @@ img {
   gap: 12px;
   align-items: center;
 }
+
 .down_person {
   border-radius: 50px;
   padding: 12px;
@@ -481,6 +594,7 @@ img {
   height: 60px;
   background-color: #ffffff52;
 }
+
 .main_cash_prize_div {
   position: absolute;
   bottom: 10%;
@@ -488,7 +602,9 @@ img {
   width: 100px;
   gap: 12px;
   align-items: center;
+  z-index: 1000;
 }
+
 .cash_prize {
   border: 2px solid white;
   border-radius: 50px;
@@ -497,12 +613,14 @@ img {
   height: 70px;
   background-color: #ffffff52;
 }
+
 .map {
   background-color: black;
   color: white;
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .map_img {
   background-color: black;
   color: white;
@@ -513,73 +631,97 @@ img {
   height: 80vh;
   position: relative;
 }
+
 .map_line {
   position: absolute;
   width: 1100px;
   top: 29%;
   left: 15%;
 }
+
 .red_circle {
   position: absolute;
   width: 50px;
   top: 34%;
   left: 50%;
 }
+
 .location_mark {
   position: absolute;
   width: 20px;
   top: 44%;
   left: 60.4%;
 }
+
+.main_circle_location_mark {
+  position: absolute;
+  bottom: 35%;
+  left: 23.4%;
+  align-items: center;
+}
+
 .circle_location_mark {
   border: 1px solid white;
   width: 65px;
   height: 65px;
   border-radius: 50px;
   padding: 20px;
-  position: absolute;
-  bottom: 40%;
-  left: 24%;
+  margin-left: 10px;
 }
+
+.main_red_circle_location_mark {
+  position: absolute;
+  top: 14%;
+  left: 13%;
+}
+
 .red_circle_location_mark {
   border: 1px solid white;
   width: 65px;
   height: 65px;
   border-radius: 50px;
   padding: 20px;
-  position: absolute;
-  top: 14%;
-  left: 13%;
+}
+
+.red_circle_location_mark:hover {
   background-color: #ff01017a;
 }
+
+.circle_playwin_location_mark:hover {
+  background-color: #ff01017a;
+}
+
+.circle_location_mark:hover {
+  background-color: #ff01017a;
+}
+
 .sign_up_text {
   font-size: 20px;
-  position: absolute;
-  top: 25%;
-  left: 13%;
 }
+
+.main_circle_playwin_location_mark {
+  position: absolute;
+  bottom: 43%;
+  right: 18%;
+}
+
 .circle_playwin_location_mark {
   border: 1px solid white;
   width: 65px;
   height: 65px;
   border-radius: 50px;
   padding: 20px;
-  position: absolute;
-  bottom: 50%;
-  right: 20.5%;
+  margin-left: 46px;
 }
+
 .redeem_text {
   font-size: 20px;
-  position: absolute;
-  bottom: 35%;
-  left: 23%;
 }
+
 .play_text {
   font-size: 20px;
-  position: absolute;
-  bottom: 45%;
-  right: 18%;
 }
+
 .location_mark3 {
   width: 25px;
   position: absolute;
@@ -587,6 +729,7 @@ img {
   right: 26%;
   opacity: 0.5;
 }
+
 .location_mark4 {
   width: 25px;
   position: absolute;
@@ -594,10 +737,12 @@ img {
   left: 10%;
   opacity: 0.5;
 }
+
 .map_text {
   font-weight: 100;
   font-size: 18px;
 }
+
 .timer_section {
   background: url("./assets/bg\ last\ section\ 1.svg");
   background-repeat: no-repeat;
@@ -606,12 +751,14 @@ img {
   color: white;
   position: relative;
 }
+
 .timer_heading {
   position: absolute;
   top: 10%;
   left: 34%;
   font-size: 34px;
 }
+
 .timer_div {
   max-width: 700px;
   position: absolute;
@@ -626,11 +773,13 @@ img {
   font-weight: 400;
   letter-spacing: 15px;
 }
+
 #demo {
   font-size: 36px;
   margin: 24px 0px;
   font-weight: 500;
 }
+
 .car_img {
   width: 500px;
   position: absolute;
@@ -638,15 +787,18 @@ img {
   left: 35%;
   opacity: 0.7;
 }
+
 footer {
   padding: 50px 0px;
   background-color: black;
 }
+
 .footer_text {
   font-weight: 100;
   text-align: center;
   color: white;
 }
+
 .timer_parashoot1 {
   width: 150px;
   position: absolute;
@@ -654,6 +806,7 @@ footer {
   left: 40%;
   opacity: 0.6;
 }
+
 .timer_parashoot2 {
   width: 150px;
   position: absolute;
@@ -672,16 +825,19 @@ footer {
   animation-fill-mode: forwards;
   opacity: 0.7;
 }
+
 @keyframes dropBox {
   0% {
     transform: scale(1);
     top: -40%;
   }
+
   100% {
     transform: scale(1);
     top: 50%;
   }
 }
+
 .scope_back_img {
   display: none;
 }
@@ -689,19 +845,22 @@ footer {
 .hover-icons:hover {
   background-color: rgb(249, 142, 28);
 }
+
 .smoke_effect {
   width: 100px;
   position: absolute;
   opacity: 0.3;
 }
-.gradient4{
-  background-image: linear-gradient(black 70%,transparent );
+
+.gradient4 {
+  background-image: linear-gradient(black 70%, transparent);
   position: absolute;
   top: 0%;
   height: 18%;
   width: 100%;
 }
-.backimga {
+
+/* .backimga {
   -webkit-mask-image: url("./assets/bg circle.svg");
   -webkit-mask-size: 300px 300px;
   -webkit-mask-position: center;
@@ -715,264 +874,476 @@ footer {
   transform: scale(1);
   cursor: pointer;
   animation: imgHover 5s linear infinite ;
-}
+} */
 .gradient5 {
   width: 100%;
   position: absolute;
   background-image: linear-gradient(transparent, black 110%, black);
   height: 100vh;
 }
-.bags_hel{
+
+.bags_hel {
   position: absolute;
   right: 6%;
   top: 47%;
   width: 280px;
   opacity: 0.4;
 }
-@keyframes imgHover {
+
+/* @keyframes imgHover {
   0% {
     transform: scale(1.5);
     top: 120%;
   }
-}
-.mobile_direction_indicator{
+} */
+.mobile_direction_indicator {
   display: none;
 }
+
 /* @media screen and (min-width: 768px) {
   .banner_heading{
     top: 25%;
   }
 } */
 
+.marq_excitment {
+  border: 2px solid white;
+  padding: 25px;
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+  background-color: #ffffff57;
+}
+
+.marq {
+  width: 50px;
+}
+
+
+.marq_excitment_text {
+  border: 2px solid white;
+  width: 300px;
+  text-overflow: clip;
+}
+
+.margen_left {
+  
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.display {
+  
+  display: flex;
+  gap: 50px;
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px) {
+  .gradient2 {
+    height: 73vh;
+  }
+
+  .backimga {
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  .backimga img {
+    width: 100%;
+  }
+
+  .main_down_person_div {
+    right: 23%;
+  }
+
+  .main_cash_prize_div {
+    right: 19%;
+  }
+
+  .main_seamless_div {
+    right: 19%;
+  }
+
+  .map_line {
+    width: 950px;
+  }
+
+  .main_red_circle_location_mark {
+    bottom: 37%;
+    left: 12.5%;
+  }
+
+  .main_circle_location_mark {
+    bottom: 37%;
+    left: 24.4%;
+  }
+
+  .main_circle_playwin_location_mark {
+
+    bottom: 45%;
+    right: 7.6%;
+  }
+
+  .location_mark {
+    top: 42%;
+    left: 67.4%;
+  }
+
+  .timer_div {
+    right: 27%;
+  }
+}
+
 @media screen and (min-width:769px) and (max-width:1024px) {
-  .backimga,.gradient5,.gradient4,.person_Img{
+
+  .gradient5,
+  .gradient4,
+  .parashoot {
     display: none;
   }
 
-  .banner_heading{
+  .backimga img {
+    width: 100%;
+  }
+
+  .backimga {
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  .main_circle_playwin_location_mark {
+    bottom: 45%;
+    right: 11%;
+  }
+
+  .timer_div {
+    bottom: -8%;
+    right: 30%;
+  }
+
+  .banner_heading {
     top: 37%;
     font-size: 28px;
   }
-  .gradient2{
+
+  .gradient2 {
     height: 70vh;
   }
-  .direction_indicator{
+
+  .direction_indicator {
     width: 800px;
   }
-  .scope_target{
+
+  .scope_target {
     top: 23%;
     left: 32%;
   }
-  .scope_back_img{
+
+  .scope_back_img {
     display: block;
     width: 300px;
     left: 11%;
     top: 4%;
   }
-  .main_clock_div{
+
+  .main_clock_div {
     left: 17%;
   }
-  .main_exciting_div{
+
+  .main_exciting_div {
     left: 23%;
   }
-  .main_seamless_div{
+
+  .main_seamless_div {
     top: 26%;
     right: 17%;
   }
-  .main_down_person_div{
+
+  .main_down_person_div {
     right: 20%;
   }
-  .main_cash_prize_div{
+
+  .main_cash_prize_div {
     right: 17%;
     bottom: 11%;
   }
-  .main_bullet_mark_div{
-    left: 24%;
-    top: 16%;
+
+  .main_bullet_mark_div {
+    left: 27%;
+    top: 25%;
   }
-  .bags_hel{
+
+  .bags_hel {
     width: 200px;
   }
-  .map_line{
+
+  .map_line {
     width: 760px;
   }
-  .location_mark{
-  left: 64%;
-  top: 39%;
+
+  .location_mark {
+    left: 64%;
+    top: 39%;
   }
-  .sign_up_text{
+
+  .sign_up_text {
     left: 12.2%;
     top: 27%;
     font-size: 20px;
   }
-  .circle_playwin_location_mark{
+
+  .circle_playwin_location_mark {
     right: 16%;
   }
-  .redeem_text{
+
+  .redeem_text {
     font-size: 20px;
   }
-  .play_text{
+
+  .play_text {
     font-size: 20px;
     right: 15%;
   }
-  .circle_location_mark{
+
+  .circle_location_mark {
     bottom: 43%;
   }
-  .timer_section{
+
+  .timer_section {
     height: 80vh;
   }
-  .timer_heading{
+
+  .timer_heading {
     font-size: 24px;
   }
-  .timer_desc{
+
+  .timer_desc {
     font-size: 26px;
   }
-  #demo{
+
+  #demo {
     font-size: 28px;
   }
-  .car_img{
+
+  .car_img {
     width: 300px;
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .about_left,.bullets,.gradient2,.backimga,.map,.timer_parashoot2,.parashoot5,.parashoot,.parashoot3,.gradient4,.person_Img{
+
+  .about_left,
+  .bullets,
+  .gradient2,
+  .map,
+  .timer_parashoot2,
+  .parashoot5,
+  .parashoot,
+  .parashoot3,
+  .gradient4 {
     display: none;
   }
-  .background_viedo{
+
+  .background_viedo {
     background: url('./assets/tablet banner.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
-  .banner_heading{
+
+  .banner_heading {
     top: 41.5%;
     font-size: 30px;
   }
+
   .gradient {
     background-image: radial-gradient(transparent, black 75%, black);
   }
+
   .welcome {
     height: 50vh;
   }
+
   .welcome_text {
     left: 25%;
   }
-  .about_right{
-    flex:0 1 100%;
+
+  .about_right {
+    flex: 0 1 100%;
   }
-  .about_alignment{ 
+
+  .about_alignment {
     text-align: center;
     padding: 0px 30px;
   }
-  .stone_div{
+
+  .stone_div {
     opacity: 0.5;
   }
+
   .back_img {
     background-size: cover;
   }
-  .scope_div{
+
+  .scope_div {
     padding: 0px 30px;
   }
-  .scope_target{
+
+  .scope_target {
     width: 350px;
     left: 28%;
   }
-  .scope_line{
+
+  .scope_line {
     width: 190px;
-    top: 12%;
-    left: 23%;
+    top: 17%;
+    left: 21%;
   }
-  .scope_line_red_dot{
-    left: 49%;
+
+  .scope_line_red_dot {
+    left: 50%;
   }
-  .main_clock_div{
+
+  .main_clock_div {
     left: 12%;
   }
-  .main_exciting_div{
+
+  .main_exciting_div {
     bottom: 18%;
     left: 20%;
   }
-  .main_seamless_div{
+
+  .main_seamless_div {
     top: 26%;
     right: 13%;
   }
-  .main_down_person_div{
+
+  .main_down_person_div {
     bottom: 43%;
     right: 10%;
   }
-  .main_cash_prize_div{
+
+  .main_cash_prize_div {
     bottom: 19%;
     right: 19%;
   }
-  .main_bullet_mark_div{
+
+  .main_bullet_mark_div {
     left: 20%;
     top: 20%;
   }
-  .scope_back_img{
-    display: block; 
+
+  .scope_back_img {
+    display: block;
     width: 280px;
     top: 0;
     left: 10%;
   }
-  .direction_indicator{
+
+  .direction_indicator {
     width: 650px;
   }
-  .timer_section{
+
+  .timer_section {
     background-size: cover;
   }
-  .timer_parashoot1{
+
+  .timer_parashoot1 {
     top: 25%;
     left: 30%;
   }
-  .timer_div{
+
+  .timer_div {
     bottom: 0;
     left: 20%;
     width: 500px;
   }
-  .timer_heading{
+
+  .timer_heading {
     font-size: 37px;
     left: 21%;
   }
-  .timer_desc{
+
+  .timer_desc {
     font-size: 28px;
   }
-  #demo{
+
+  #demo {
     font-size: 30px;
   }
-  .car_img{
+
+  .car_img {
     width: 400px;
     left: 27%;
   }
-  .gradient3{
-    top:57%;
+
+  .gradient3 {
+    top: 57%;
   }
-  .bags_hel{
+
+  .bags_hel {
     width: 220px;
     top: 72%;
     left: 39%;
     opacity: 0.6;
   }
+
+  .backimga {
+    -webkit-mask-size: 275px 275px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  .backimga img {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  /* .parashoot, */
+
+
+  
+  .parashoot,
   .parashoot3,
-  .parashoot2,
-  .parashoot4,
   .parashoot5,
   .main_clock_div,
   .scope_target_text,
-  .main_seamless_div,.sign_up_text,
+  .main_seamless_div,
+  .sign_up_text,
   .main_down_person_div,
   .main_cash_prize_div,
-  .direction_indicator,.map_line,
- .gun2,.dropBox,.bags_hel,.timer_parashoot1,
-  .timer_parashoot2,.person_Img,.red_circle_location_mark,
-  .backimga,.location_mark4,.location_mark3,.location_mark,
-  .gradient5,.circle_playwin_location_mark,.play_text,
-  .gradient4
-   {
+  .direction_indicator,
+  .map_line,
+  .gun2,
+  .dropBox,
+  .bags_hel,
+  .timer_parashoot1,
+  .timer_parashoot2,
+  .red_circle_location_mark,
+  .location_mark4,
+  .location_mark3,
+  .location_mark,
+  .gradient5,
+  .circle_playwin_location_mark,
+  .play_text,
+  .gradient4 {
     display: none;
   }
 
@@ -982,172 +1353,210 @@ footer {
     background-size: cover;
     background-position: center;
   }
+
   .welcome {
     object-fit: cover;
     height: 33vh;
   }
+
   .welcome_text {
     left: 0;
     top: 22%;
     padding: 10px;
     display: none;
   }
+
   .bgmi_about {
     flex-direction: column-reverse;
     padding-top: 20px;
   }
+
   .about_alignment {
     padding: 0px 16px;
     text-align: center;
   }
+
   .about_heading,
   .scope_heading {
     font-size: 20px;
   }
+
   .about_text {
     font-size: 11px;
     letter-spacing: 0px;
   }
+
   .bullets {
     left: 0;
     top: 40%;
 
   }
+
   .gradient {
     background-image: radial-gradient(transparent, black 90%, black);
   }
+
   .stone_div {
     padding-top: 60px;
   }
+
   .scope_div {
     padding: 0px 28px;
   }
+
   .back_img {
     background: url("./assets/scope\ new\ banner\ for\ mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
+
   .scope_target {
     left: 16%;
     width: 270px;
   }
+
   .scope_back_img {
     display: block;
     top: -14%;
     left: 10%;
     width: 220px;
   }
+
   .scope_line {
     width: 160px;
-    top: 3%;
-    left: 21%;
+    top: 16%;
+    left: 19%;
   }
+
   .scope_line_red_dot {
     width: 6px;
     height: 7px;
-    top: 45%;
+    top: 49%;
     left: 49.8%;
   }
+
   .direction_indicator {
     width: 320px;
   }
+
   #scope_target_timmer {
     font-size: 13px;
     left: 58%;
   }
+
   .guns_bags {
     left: 4%;
     bottom: 17%;
     opacity: 0.6;
   }
+
   .scope_text {
     padding: 0px 16px;
     font-size: 14px;
     letter-spacing: 1px;
   }
+
   .guns {
     flex-direction: column;
     gap: 0;
     height: 200px;
   }
+
   .timer_section {
     background-size: auto;
   }
+
   .car_img {
     width: 260px;
     left: 18%;
     opacity: 0.8;
-    bottom:20% ;
+    bottom: 20%;
   }
+
   .timer_parashoot1 {
     top: 8%;
     left: 10%;
     opacity: 0.7;
   }
+
   .timer_div {
     left: 0;
     bottom: 0;
     width: 100%;
   }
+
   .timer_heading {
-    left: 11%;
+    left: 14%;
     font-size: 22px;
   }
+
   .timer_desc {
     font-size: 22px;
     letter-spacing: 10px;
   }
+
   #demo {
     font-size: 28px;
   }
+
   footer {
     padding: 10px;
     background-color: #0d1418;
   }
-  .scope_parashoot{
+
+  .scope_parashoot {
     top: 10%;
   }
-  .gradient3{
+
+  .gradient3 {
     top: 40%;
     background-image: linear-gradient(transparent, black 67%, black);
     height: 60vh;
   }
-  .bags_hel{
+
+  .bags_hel {
     width: 220px;
     top: 75%;
     left: 24%;
   }
-  .gradient2{
+
+  .gradient2 {
     background-image: linear-gradient(transparent, black 95%, black);
   }
-  .banner_heading{
+
+  .banner_heading {
     font-size: 18px;
     letter-spacing: 8px;
     top: 40%;
     font-size: 22px;
   }
-  .banner_subheading{
+
+  .banner_subheading {
     font-size: 18px;
     letter-spacing: 6px;
     top: 46%;
   }
-  .banner_para{
+
+  .banner_para {
     font-size: 18px;
     letter-spacing: 4px;
     font-weight: 600;
   }
-  .mobile_direction_indicator{
+
+  .mobile_direction_indicator {
     padding-top: 40px;
     margin: 0 auto;
     display: block;
     width: 90%;
   }
+
   .main_bullet_mark_div {
     position: absolute;
     top: 38%;
     left: 13%;
   }
+
   .bullet_mark {
     border: 2px solid white;
     border-radius: 50%;
@@ -1156,10 +1565,12 @@ footer {
     height: 80px;
     background-color: #ffffff3d;
   }
-  .main_exciting_div{
+
+  .main_exciting_div {
     bottom: 2%;
     left: 37%;
   }
+
   .exciting {
     border: 2px solid white;
     border-radius: 50px;
@@ -1168,66 +1579,106 @@ footer {
     height: 70px;
     background-color: #ffffff52;
   }
-  .short_heading{
+
+  .short_heading {
     font-size: 14px;
   }
-  .map_img{
-   background: url('./assets/mobile\ map\ img.svg');
-   background-repeat: no-repeat;
-   background-size: 100% 100%;
-   background-position: center;
+
+  .map_img {
+    background: url('./assets/mobile\ map\ img.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
   }
-  .red_circle{
+
+  .red_circle {
     width: 40px;
     height: 40px;
     top: 40%;
     left: 38%;
   }
-  .red_location{
+
+  .red_location {
     display: block;
     position: absolute;
     width: 15px;
     height: 15px;
     left: 28%;
-    top: 68%;
+    top: 55%;
   }
-  .red_location2{
+
+  .red_location2 {
     display: block;
     position: absolute;
     width: 15px;
     height: 15px;
     left: 54%;
-    top: 61.4%;
+    top: 47.4%;
   }
-  .red_location3{
+
+  .red_location3 {
     display: block;
     position: absolute;
     width: 15px;
     height: 15px;
     left: 68%;
-    top: 68%;
+    top: 55%;
   }
-  .circle_location_mark{
-    background-color:#ff000063;
+
+  .circle_location_mark {
+    background-color: #ff000063;
     left: 43%;
     bottom: 36%;
   }
-  .redeem_text{
+
+  .redeem_text {
     bottom: 31%;
     left: 32%;
   }
-  .map_text{
-    margin-top: -20%;;
+
+  .map_text {
+    margin-top: -20%;
+    padding: 24px;
   }
-  .timer_section{
+
+  .timer_section {
     background: url('./assets/bfg\ last\ section\ mobile\ 1.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
-.stone_div2{
-  width: 100%;
-  height: 100%;
+
+  .stone_div2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main_circle_location_mark {
+    bottom: 16%;
+    left: 39.4%;
+
+  }
+
+  .backimga {
+    -webkit-mask-size: 220px 220px;
+    position: absolute;
+    left: 0;
+    top: -1%;
+    overflow: hidden;
+  }
+
+  .hover_img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .backimga img {
+    width: 100%;
+  }
+
+  .scope_img {
+    width: 250px;
+  }
 }
-}
+
 
