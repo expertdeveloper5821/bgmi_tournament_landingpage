@@ -12,17 +12,51 @@
     <meta name="author" content="Saksham Aggarwal" />
 
     <title>PATT SE HEADSHOT</title>
+    <script src="https://kit.fontawesome.com/4ae88e68c5.js" crossorigin="anonymous"></script>
 
     <link
       rel="icon"
       href="https://w7.pngwing.com/pngs/1010/383/png-transparent-beretta-m9-beretta-92-pistol-firearm-weapon-handgun-airsoft-weapon.png"
       type="image/x-icon"
     />
+
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body id="body">
     <audio id="audio" src="./assets/gunsound.mp3"></audio>
+
+
     <section class="background_viedo">
+      <header class="header">
+        <nav class="flex_sb">
+          <div class="logo">
+            <a href="#"><img src="./assets/logolite.svg" alt="logo"></a>
+          </div>
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="menu-icon"><img src="./assets/menulogo.svg" alt=""></label>
+          <ul class="menu flex_center">
+            <li><a class="anqr"  href="#">Home</a></li>
+            <li><a class="anqr"  href="#">About Us</a></li>
+            <li><a class="anqr"  href="#">Upcoming Matches</a></li>
+            <li><a class="anqr" href="#">Contact Us</a></li>
+            <div class="login_button_div flex">
+              <div class="login_img">
+              <img src="./assets/loginlogo.svg" alt="">
+            </div>
+            <a class="login_button" href="https://bgmi-tournament-fe.vercel.app/auth/login">Login</a>
+          </div>
+          </ul>
+        </nav>
+      </header>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100095239340085&is_tour_dismissed=true"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/pattseheadshotsj/"> <i class="fa-brands fa-instagram"></i></a>
+       <a href="https://twitter.com/headshot_p4491"><i class="fa-brands fa-x-twitter"></i></a>
+       <a href=" https://www.youtube.com/channel/UC8GDIEtwWV_67Fxpxfa298Q"><i class="fa-brands fa-youtube"></i></a>
+       <a href="https://t.me/pattseheadshotsj  "><i class="fa-brands fa-telegram"></i></a>
+
+
+      </div>
       <div class="gradient5"></div>
       <div class="parashoot">
         <img class="person_Img" src="./assets/parashoot.png" alt="parashoot" />
@@ -51,7 +85,9 @@
         EARN CASH REWARDS FOR CONQUERING
       </marquee>
     </section>
-    <!-- <section class="up_coming_matches">
+
+
+    <section class="up_coming_matches">
       <div class="up_coming_heading text_align">
         <h3 class="upComingHeading">Upcoming Matches</h3>
         <p class="upComingPara">
@@ -62,12 +98,74 @@
           their gaming passion.
         </p>
       </div>
-      
-      <div class="upcommingDiv">
-        <img src="./assets/contet area.svg" alt="">
+    </section>
+
+
+    <section class="bgmi_sec">
+      <div class="left">
+        <div class="bgmi_img">
+          <img
+            src="./assets/matches_banner.svg" alt="bg"
+          />
+        </div>
       </div>
-    </section> -->
-    <section class="welcome">
+      <div class="right">
+        <div>
+          <h2 class="bgmiHead">BGMI SQUAD MATCH</h2>
+          <p class="bgmi_para">Time: 02/08/2023 at 06:00 pm</p>
+        </div>
+        <div class="winning_prize">
+          <div class="winning_sec_left">
+            <p class="winning_Para">WINNING PRIZE</p>
+            <h3 class="text_size">Last Survival: 50 * 4</h3>
+          </div>
+          <div class="winning_sec_right">
+            <p class="winning_Para">ENTERY FEES</p>
+            <span class="text_size"
+              >
+              50<span> <img src="./assets/rupee img.svg" class="rupee" /></span
+            ></span>
+          </div>
+        </div>
+        <div class="typeandversion">
+          <div class="first">
+            <p class="winning_Para">TYPE</p>
+            <h4 class="text_color">Tournaments</h4>
+          </div>
+          <div class="second">
+            <p class="winning_Para">VERSION</p>
+            <h4 class="text_color">TPP</h4>
+          </div>
+          <div class="third">
+            <p class="winning_Para">MAP</p>
+            <h4 class="text_map">Erangel</h4>
+          </div>
+        </div>
+        <div class="spots">
+          <div class="spot_space">
+            <input type="range" class="input_range" />
+            <p class="winning_Para_top">Only 30 spots left 20/50</p>
+          </div>
+          <div class="button_space">
+            <button class="btn">JOIN</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="carusol">
+      <div class="row small">
+        <div class="imagegroup" style="animation-delay: 1s;">
+           <img  src="./assets/1.svg" alt="1">
+           <img  src="./assets/2.svg" alt="">
+           <img  src="./assets/3.svg" alt="">
+           <img  src="./assets/4.svg" alt="">
+           <img src="./assets/2.svg" alt="">
+           <img src="./assets/1.svg" alt="">
+        </div>
+      </div>
+
+    <!-- <section class="welcome">
       <div class="gradient"></div>
       <p class="welcome_text text_align">
         Are you ready to take your BGMI gaming to the next level? Look no
@@ -76,7 +174,9 @@
         enthusiastic players who have already unlocked the true potential of
         their gaming passion.
       </p>
-    </section>
+    </section> -->
+
+
     <section class="bgmi_about flex">
       <div class="about_left">
         <div class="stone_div">
@@ -134,26 +234,19 @@
           <img class="scope_parashoot" src="./assets/parashoot.png" alt="" />
         </div>
 
-        <!-- <div class="backimga">
-          <img class="hover_img" src="./assets/scope target image.svg" alt="" />
-        </div> -->
-        
-        <div class="scope_img">
-        <div class="scope_bg_img">
-        <img class="bg_img_scale" src="./assets/new scope.svg" alt="" />
-        <img class="bg_img_static"  src="./assets/bg.svg" alt="" />
-        <img class="scope_line" src="./assets/scope line.svg" alt="" />
-        <div class="scope_line_red_dot"></div>
-        
-        <div class="scope_target_text text_align">150 meters</div>
-      </div>
-      </div>
-        <!-- <div class="scope_target">
-          <img src="./assets/new scope.svg" alt="" />
-       
+   
 
-          <div id="scope_target_timmer">00:23</div>
-        </div> -->
+        <div class="scope_img">
+          <div class="scope_bg_img">
+            <img class="bg_img_scale" src="./assets/new scope.svg" alt="" />
+            <img class="bg_img_static" src="./assets/bg.svg" alt="" />
+            <img class="scope_line" src="./assets/scope line.svg" alt="" />
+            <div class="scope_line_red_dot"></div>
+
+            <div class="scope_target_text text_align">150 meters</div>
+          </div>
+        </div>
+ 
         <div class="gradient3"></div>
         <div class="bags_hel">
           <img src="./assets/bags helmet.svg" alt="" />
@@ -184,6 +277,7 @@
           <div class="down_person hover-icons" id="skills">
             <img src="./assets/down person 2.svg" alt="" />
           </div>
+          <p class="short_heading">Skills</p>
         </div>
 
         <div class="main_cash_prize_div flex_icon text_align">
@@ -297,23 +391,53 @@
       <img class="car_img" src="./assets/car image buggy.svg" alt="" />
       <p class="timer_heading">Something Special For You</p>
       <div class="timer_div">
-        <p class="timer_desc">Wait! Wait! Wait!</p>
-        <p id="demo"></p>
+        <p class="timer_desc">Play First time free</p>
+        <p class="time_para">Don’t waste your time Hurry up! Signup now</p>
+        <button class="btnSingup">
+          Singup
+        </button>
       </div>
-      <div>
-        <img class="timer_parashoot1" src="./assets/parashoot.png" alt="" />
-      </div>
-      <div>
-        <img class="timer_parashoot2" src="./assets/parashoot.png" alt="" />
-      </div>
+      
 
+
+     
       <!-- <div id="drop-box">
         <img class="person_Img" src="./assets/drop.svg" alt="parashoot" />
       </div> -->
     </section>
 
+   
+
     <footer>
-      <p class="footer_text">&#169; Technogetic Pvt Ltd All Rights Reserved.</p>
+      <section class="sun">
+      
+     
+      
+        <div class="center">
+          <div class="logo_second">
+            <a href="#"><img src="./assets/logolite.svg" alt="logo"></a>
+          </div>
+          <div class="anchorTags">
+            <a class="ancor" href="">Policies</a>
+            <a class="ancor" href="">Terms & conditions</a>
+            <a class="ancor" href="">Contact Us</a>
+          </div>
+          <div class="more_info">
+            <p class="moreInfoPara">Let’s connect more information</p>
+          </div>
+          <div class="social_I">
+            <a href="https://www.facebook.com/profile.php?id=100095239340085&is_tour_dismissed=true"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/pattseheadshotsj/"> <i class="fa-brands fa-instagram"></i></a>
+           <a href="https://twitter.com/headshot_p4491"><i class="fa-brands fa-x-twitter"></i></a>
+           <a href=" https://www.youtube.com/channel/UC8GDIEtwWV_67Fxpxfa298Q"><i class="fa-brands fa-youtube"></i></a>
+           <a href="https://t.me/pattseheadshotsj  "><i class="fa-brands fa-telegram"></i></a>
+
+  
+          </div>
+          <p>Mail us: support@pattseheadshot.com</p>
+          <p class="footer_text">&#169; Technogetic Pvt Ltd All Rights Reserved.</p>
+        </div>
+      </section>
     </footer>
 
     <script src="./index.js"></script>
