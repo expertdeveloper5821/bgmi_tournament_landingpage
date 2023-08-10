@@ -10,6 +10,9 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  color: #fff;
+}
 
 .flex {
   display: flex;
@@ -1094,6 +1097,7 @@ img {
 
 .moreInfoPara{
   text-decoration: underline;
+  color: #fff;
 }
 
 
