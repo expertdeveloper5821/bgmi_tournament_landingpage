@@ -1013,7 +1013,7 @@ img {
   text-align: center;
   background: url("./assets/bg\ last\ section\ 1.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   height: 100vh;
   color: white;
   position: relative;
@@ -1088,7 +1088,7 @@ img {
   /* position: absolute;
   bottom: 16%;
   left: 35%; */
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 
@@ -1454,7 +1454,7 @@ padding: 20px;
 
 /* teams & condition */
 
-/* .terms{
+.terms{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -1481,7 +1481,7 @@ p{
 }
 li{
   font-size: 20px;
-} */
+}
 
 
 
@@ -1702,6 +1702,9 @@ li{
 
   .car_img {
     width: 300px;
+  }
+  .blank_div{
+
   }
 }
 
@@ -1955,6 +1958,9 @@ li{
   }
   .blank_div{
     height: 160px;
+  }
+  .coomingsoon_date{
+    font-size: 44px;
   }
 }
 
@@ -2453,7 +2459,7 @@ li{
   left: 0;
 }
 .logo_second{
-  width: 250px;
+ 
   align-items: center;
   margin: auto;
   margin-left: 28px;
