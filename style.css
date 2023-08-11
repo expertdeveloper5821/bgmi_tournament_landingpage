@@ -10,6 +10,9 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  color: #fff;
+}
 
 .flex {
   display: flex;
@@ -1061,6 +1064,7 @@ img {
 }
 
 .btnSingup{
+  cursor: pointer;
   border-radius: 10px;
   margin-top: 20px;
   width: 200px;
@@ -1108,6 +1112,7 @@ img {
 
 .moreInfoPara{
   text-decoration: underline;
+  color: #fff;
 }
 
 
