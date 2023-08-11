@@ -2367,3 +2367,19 @@ transition: 2.9s;
     background-position: center;
     background-size: 100%;
 }
+
+.play_text{
+  margin: 20px 0px;
+  font-size: 28px;
+  letter-spacing: 18px;
+  font-weight: 300;
+}
+.coomingsoon_date{
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+.para3{
+  font-size: 22px;
+  font-weight: 300;
+}
