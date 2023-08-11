@@ -39,6 +39,10 @@ a {
   padding: 0 30px;
   width: 100%;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 
 h1 {
   font-size: 25px;
@@ -499,6 +503,7 @@ img {
   background-color: black;
   color: white;
   margin-top: 40px;
+  position: relative;
 }
 
 .about_left {
@@ -529,8 +534,9 @@ img {
 .gradient2 {
   width: 100%;
   position: absolute;
-  background-image: linear-gradient(transparent, black 80%, black);
+  background-image: linear-gradient(transparent, black 80%,black);
   height: 100vh;
+  bottom:0;
 }
 
 .gradient3 {
@@ -1021,9 +1027,9 @@ img {
 }
 
 .timer_heading {
-  position: absolute;
-  top: 10%;
-  left: 34%;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
   font-size: 34px;
 }
 
@@ -1035,10 +1041,14 @@ img {
 
 .timer_div {
   max-width: 800px;
-  position: absolute;
-  bottom: 0%;
-  right: 27%;
-  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+ 
+  
 }
 .time_para{
   margin-top: 10px;
@@ -1054,6 +1064,7 @@ img {
 }
 
 .btnSingup{
+  cursor: pointer;
   border-radius: 10px;
   margin-top: 20px;
   width: 200px;
@@ -1068,12 +1079,15 @@ img {
   margin: 24px 0px;
   font-weight: 500;
 }
-
+.blank_div{
+  /* border: 2px solid white; */
+  height: 300px;
+}
 .car_img {
   width: 500px;
-  position: absolute;
+  /* position: absolute;
   bottom: 16%;
-  left: 35%;
+  left: 35%; */
   opacity: 0.7;
 }
 
@@ -1088,11 +1102,12 @@ img {
 
 
 .footer_text {
+  padding: 10px;
   font-weight: 100;
   text-align: center;
   color: white;
-  position: absolute;
-  bottom: 0;
+  
+  bottom: 0px;
 }
 
 .moreInfoPara{
@@ -1102,7 +1117,7 @@ img {
 
 
 .sun {
-  position: relative;
+ 
   padding-top:20px ;
   display: flex;
   justify-content: center;
@@ -1273,7 +1288,8 @@ color: white;
   z-index: 1;
   padding: 11px 120px;
   background: rgba(0 ,0 ,0 , .1);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
 }
 nav {
   padding: 5px 30px;
@@ -1290,7 +1306,7 @@ nav {
   list-style: none;
      gap: 20px;
 }
-.menu a {
+.anqr {
   display: block;
   font-size: 16px;
   font-weight: 500;
@@ -1300,7 +1316,7 @@ nav {
   /* padding: 0 10px; */
 }
 .anqr{
-  position: relative;
+  position: relative;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 }
 .anqr::after{
 content: "";
@@ -1346,7 +1362,14 @@ transition: 2.9s;
 #menu-toggle:checked ~ .menu {
   transform: scale(1, 1);
 }
-
+@media screen and (min-width:1201px) and (max-width:2400px) {
+  .map_line{
+    display: none;
+  }
+  .gradient2{
+    height: 67vh;
+  }
+}
 
 @media screen and (min-width:1025px) and (max-width:1200px) {
   .map_line{
@@ -1707,6 +1730,7 @@ transition: 2.9s;
   .timer_heading {
     font-size: 37px;
     left: 21%;
+    padding: 20px;
   }
 
   .timer_desc {
@@ -1748,6 +1772,52 @@ transition: 2.9s;
   }
   .bgmi_sec{
     flex-direction: column;
+  }
+  .header{
+    padding: 0px;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(60px);
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    padding: 20px 10px;
+  }
+  .menu a {
+    font-size: 18px;
+  }
+  .menu li {
+    margin-bottom: 10px;
+  }
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  .login_button_div{
+    margin: 0;
+    padding: 0px;
+    gap:0;
+    background-color: #003554;
+  }
+  .login_img{
+    width: 21px;
+    height: 21px;
+  }
+  .login_button_div a{
+    padding: 4px 8px 4px 2px;
+  }
+  .login_button{
+    left: 0;
   }
 }
 
@@ -1818,9 +1888,9 @@ transition: 2.9s;
 
   }
 
-  .gradient {
+  /* .gradient {
     background-image: radial-gradient(transparent, black 90%, black);
-  }
+  } */
 
   .stone_div {
     padding-top: 60px;
@@ -1910,11 +1980,14 @@ transition: 2.9s;
     left: 0;
     bottom: 0;
     width: 100%;
+    padding: 7px;
+    
   }
 
   .timer_heading {
     left: 14%;
     font-size: 22px;
+    padding: 20px;
   }
 
   .timer_desc {
@@ -2062,15 +2135,16 @@ transition: 2.9s;
   }
 
   .map_text {
-    margin-top: -20%;
+    margin-top: -15%;
     padding: 24px;
   }
 
   .timer_section {
-    background: url('./assets/bfg\ last\ section\ mobile\ 1.svg');
+    background: url('./assets/mobiletimersection.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 32px;
   }
 
   .stone_div2 {
@@ -2202,7 +2276,7 @@ transition: 2.9s;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  background: rgba(0 ,0 ,0 , .2);
+  background: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(60px);
   top: 70px;
   left: 0;
@@ -2214,7 +2288,6 @@ transition: 2.9s;
   padding: 20px 10px;
 }
 .menu a {
-  margin-left: 12px;
   font-size: 18px;
 }
 .menu li {
@@ -2227,15 +2300,17 @@ transition: 2.9s;
   cursor: pointer;
 }
 .login_button_div{
+  margin: 0;
   padding: 0px;
   gap:0;
+  background-color: #003554;
 }
 .login_img{
-  width: 26px;
-  height: 26px;
+  width: 21px;
+  height: 21px;
 }
 .login_button_div a{
-  padding: 5px;
+  padding: 4px 8px 4px 2px;
 }
 .login_button{
   left: 0;
@@ -2246,10 +2321,16 @@ transition: 2.9s;
   margin: auto;
   margin-left: 28px;
 }
+.text_map {
+  font-size: 14px;
+}
+/* .moreInfoPara{
+  color: white;
+} */
 }
 
 
-
+/* comming soon */
 
 .boxDiv{
     max-width: 700px;

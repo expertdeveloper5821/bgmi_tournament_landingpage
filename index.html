@@ -36,15 +36,15 @@
           <label for="menu-toggle" class="menu-icon"><img src="./assets/menulogo.svg" alt=""></label>
           <ul class="menu flex_center">
             <li><a class="anqr"  href="#">Home</a></li>
-            <li><a class="anqr"  href="#">About Us</a></li>
-            <li><a class="anqr"  href="#">Upcoming Matches</a></li>
-            <li><a class="anqr" href="#">Contact Us</a></li>
-            <div class="login_button_div flex">
+            <li><a class="anqr"  href="#about">About Us</a></li>
+            <li><a class="anqr"  href="#upcomming">Upcoming Matches</a></li>
+            <li><a class="anqr" href="#contact">Contact Us</a></li>          
+            <a class="login_button_div flex" href="https://bgmi-tournament-fe.vercel.app/auth/login">
               <div class="login_img">
               <img src="./assets/loginlogo.svg" alt="">
             </div>
-            <a class="login_button" href="https://app.pattseheadshot.com/auth/login">Login</a>
-          </div>
+            <span class="login_button" >Login</span>
+          </a>
           </ul>
         </nav>
       </header>
@@ -101,7 +101,7 @@
     </section>
 
 
-    <section class="bgmi_sec">
+    <section class="bgmi_sec" id="upcomming">
       <div class="left">
         <div class="bgmi_img">
           <img
@@ -178,7 +178,7 @@
     </section> -->
 
 
-    <section class="bgmi_about flex">
+    <section class="bgmi_about flex" id="about">
       <div class="about_left">
         <div class="stone_div">
           <img src="./assets/stone.svg" alt="stone" />
@@ -388,30 +388,31 @@
     </section>
 
     <section class="timer_section" id="drop-box-section">
-      <div class="gradient"></div>
-      <img class="car_img" src="./assets/car image buggy.svg" alt="" />
-      <p class="timer_heading">Something Special For You</p>
+      
+      <p class="timer_heading">Now your wait is over!! Play with us & win a lot of money</p>
+      <div class="blank_div"></div>
+      <div>
+        <img class="car_img" src="./assets/car image buggy.svg" alt="" />
+      </div>
       <div class="timer_div">
         <p class="timer_desc">Play First time free</p>
         <p class="time_para">Don’t waste your time Hurry up! Signup now</p>
-        <button class="btnSingup">
-          Singup
-        </button>
+       
       </div>
+      <a href="https://app.pattseheadshot.com/auth/signup"><button class="btnSingup">
+        Sign up
+      </button></a>
+      <!-- <div class="gradient"></div> -->
       
-
-
-     
       <!-- <div id="drop-box">
         <img class="person_Img" src="./assets/drop.svg" alt="parashoot" />
       </div> -->
     </section>
-
-   
-
-    <footer>
+    
+    
+    <footer id="contact">
       <section class="sun">
-      
+        
      
       
         <div class="center">
@@ -423,9 +424,7 @@
             <a class="ancor" href="">Terms & conditions</a>
             <a class="ancor" href="">Contact Us</a>
           </div>
-          <div class="more_info">
-            <a class="moreInfoPara" href="https://app.pattseheadshot.com/auth/login">Let’s connect for more information</a>
-          </div>
+          <p class="moreInfoPara" >Let’s connect for more information</p>
           <div class="social_I">
             <a href="https://www.facebook.com/profile.php?id=100095239340085&is_tour_dismissed=true"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.instagram.com/pattseheadshotsj/"> <i class="fa-brands fa-instagram"></i></a>
@@ -434,6 +433,7 @@
            <a href="https://t.me/pattseheadshotsj  "><i class="fa-brands fa-telegram"></i></a>
 
   
+
           </div>
           <a href="mailto: support@pattseheadshot.com">Mail us: support@pattseheadshot.com</a>
           <p class="footer_text">&#169; Technogetic Pvt Ltd All Rights Reserved.</p>
