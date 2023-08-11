@@ -1362,6 +1362,129 @@ transition: 2.9s;
 #menu-toggle:checked ~ .menu {
   transform: scale(1, 1);
 }
+
+
+/* comming soon */
+
+.boxDiv{
+  max-width: 700px;
+
+}
+
+.heading{
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  
+}
+
+.para2{
+
+  letter-spacing: 5px;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.box{
+ 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  color: white;
+  background-color: aqua;
+  background: url("./assets/sign\ up\ banner\ -\ Copy\ copy\ 1\ 1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.play_comingsoon_text{
+margin: 20px 0px;
+font-size: 28px;
+letter-spacing: 18px;
+font-weight: 300;
+}
+.coomingsoon_date{
+font-size: 60px;
+font-weight: 700;
+letter-spacing: 5px;
+color:#FF7A00;
+}
+.para3{
+font-size: 22px;
+font-weight: 300;
+}
+.commingsoon_time_para{
+margin-top: 30px;
+font-size: 32px;
+font-weight: 700;
+letter-spacing: 8px;
+}
+
+.responsive-box {
+width: 80%;
+max-width: 400px;
+margin: 50px auto;
+padding: 20px;
+background-color: #f0f0f0;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.boxDiv{
+padding: 20px;
+}
+
+.team_map{
+  font-size: 22px;
+  margin: 20px;
+}
+.erangle_color{
+  color: #028A21;
+  font-weight: 700;
+}
+
+/* teams & condition */
+
+/* .terms{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  color: white;
+  background-color: aqua;
+  background: url("./assets/sign\ up\ banner\ -\ Copy\ copy\ 1\ 1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+h3{
+  font-size: 23px;
+ 
+}
+p{
+  font-size: 20px;
+}
+li{
+  font-size: 20px;
+} */
+
+
+
 @media screen and (min-width:1201px) and (max-width:2400px) {
   .map_line{
     display: none;
@@ -1378,7 +1501,9 @@ transition: 2.9s;
   .gradient2 {
     height: 73vh;
   }
-
+  footer{
+    margin-top: 60px;
+  }
 
   .backimga {
     position: absolute;
@@ -1442,6 +1567,9 @@ transition: 2.9s;
   .parashoot,.map_line {
     display: none;
   }
+    footer{
+      margin-top: 50px;
+    }
 
   .backimga img {
     width: 100%;
@@ -1709,7 +1837,7 @@ transition: 2.9s;
   }
 
   .direction_indicator {
-    width: 650px;
+   display: flex;
   }
 
   .timer_section {
@@ -1818,6 +1946,15 @@ transition: 2.9s;
   }
   .login_button{
     left: 0;
+  }
+  .menu-icon{
+    width: 36px;
+  }
+  .boxDiv{
+    margin-top: 50px;
+  }
+  .blank_div{
+    height: 160px;
   }
 }
 
@@ -2309,8 +2446,8 @@ transition: 2.9s;
   width: 21px;
   height: 21px;
 }
-.login_button_div a{
-  padding: 4px 8px 4px 2px;
+.login_button_div {
+  padding: 10px;
 }
 .login_button{
   left: 0;
@@ -2324,46 +2461,28 @@ transition: 2.9s;
 .text_map {
   font-size: 14px;
 }
-/* .moreInfoPara{
-  color: white;
-} */
+.menu-icon{
+  width: 36px;
 }
-
-
-/* comming soon */
-
-.boxDiv{
-    max-width: 700px;
- 
-}
-
 .heading{
-    letter-spacing: 5px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    
+  font-size: 20px;
 }
-
 .para2{
-
-    letter-spacing: 5px;
-    font-size: 22px;
-    margin-bottom: 10px;
+  font-size: 14px;
+  text-align: justify;
+  letter-spacing: 2px;
 }
-
-.box{
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-    color: white;
-    background-color: aqua;
-    background: url("./assets/popup.svg");
-    background-position: center;
-    background-size: 100%;
+.play_comingsoon_text{
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+.coomingsoon_date{
+  font-size: 38px;
+}
+.team_map{
+  font-size: 16px;
+}
+.commingsoon_time_para{
+  font-size: 23px;
+}
 }
