@@ -1,5 +1,114 @@
+const API_URL = "https://gaming-portal-be.vercel.app/api/v1/room/rooms";
+
+var lastTournament;
+fetch(API_URL)
+  .then((response) => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error("Network response was not ok");
+    }
+  })
+  .then((data) => {
+    lastTournament = data[0].rooms.pop();
+    var html = `<div>
+        <h2 class="bgmiHead">${lastTournament.gameName}</h2>
+        <p class="bgmi_para">Time: ${lastTournament.date} at 06:00 pm</p>
+        </div>
+        <div class="winning_prize">
+          <div class="winning_sec_left">
+            <p class="winning_Para">WINNING PRIZE &nbsp <button id="openPopupBtn"><i class="fa-solid fa-arrow-down"></i></button></p>
+
+            <div id="popup" class="popup">
+            <div class="popup-content">
+              <span class="close" id="closePopupBtn">&times;</span>
+           
+              <div class="WinngColor">
+
+           <div class="winningSec">
+           <h4 class="WiiningPoolSec">WINNING PRIZE POOL</h4>
+           <p clas="pool">BGMI Squad match</p>
+           </div>
+              <div class="prizePool" id="popupp"></div>
+              </div>
+            </div>
+          </div>
+
+          
+            <h3 class="text_size">Last Survival: 200<span> <img src="./assets/rupee img.svg" class="rupee" /></span
+              ></h3>
+          </div>
+          <div class="winning_sec_right">
+            <p class="winning_Para">ENTERY FEES</p>
+            <span class="text_size"
+              >
+              60<span> <img src="./assets/rupee img.svg" class="rupee" /></span
+            ></span>
+          </div>
+        </div>
+        <div class="typeandversion">
+          <div class="first">
+            <p class="winning_Para">TYPE</p>
+            <h4 class="text_color">${lastTournament.gameType}</h4>
+          </div>
+          <div class="second">
+            <p class="winning_Para">VERSION</p>
+            <h4 class="text_color">${lastTournament.version}</h4>
+          </div>
+          <div class="third">
+            <p class="winning_Para">MAP</p>
+            <h4 class="text_map">${lastTournament.mapType}</h4>
+          </div>
+        </div>
+        <div class="spots">
+          <div class="spot_space">
+            <input type="range" class="input_range" />
+            <p class="winning_Para_top">Only 30 spots left 20/50</p>
+          </div>
+          <div class="button_space">
+            <button class="btn" >JOIN</button>
+          </div>
+        </div>`;
+
+    document.getElementById("rooms").innerHTML = html;
+
+    var matches = data[1].rooms;
+
+    var allimg = "";
+    matches.forEach((element) => {
+      console.log(element);
+      allimg += `<img  src="./assets/1.svg" alt="1" />`;
+    });
+    document.getElementById("allImges").innerHTML = allimg;
+  })
+  .catch((error) => {
+    console.error("Fetch error:", error);
+  })
+  .finally(() => {
+    const popUpButton = document.getElementById("openPopupBtn");
+    const popUp = document.getElementById("popup");
+    const closePopUp = document.getElementById("closePopupBtn");
+
+    closePopUp.addEventListener("click", () => {
+      popUp.style.display = "none";
+    });
+
+    var popuppp = '';
+    popUpButton.addEventListener("click", () => {
+      popuppp = `<h5>Last Survival: ${lastTournament.lastServival} <span> <img src="./assets/rupee img.svg" class="rupee"></span> </h5>
+      <h5>Highest kill: ${lastTournament.highestKill} <span> <img src="./assets/rupee img.svg" class="rupee"></span> </h5>
+      <h5>2nd Winner: ${lastTournament.secondWin}  <span> <img src="./assets/rupee img.svg" class="rupee"></span>  </h5>
+      <h5>3nd Winner: ${lastTournament.thirdWin} <span> <img src="./assets/rupee img.svg" class="rupee"></span> </h5>`;
+      document.getElementById('popupp').innerHTML = popuppp;
+      popUp.style.display = "block";
+    });
+  });
+
 var countDownDate = new Date("Aug 15, 2023 15:37:25").getTime();
-console.log("%cWelcome to pattseheadshot", "font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113); margin-bottom: 12px; padding: 5%")
+console.log(
+  "%cWelcome to pattseheadshot",
+  "font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113); margin-bottom: 12px; padding: 5%"
+);
 var x = setInterval(function () {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -53,14 +162,10 @@ skills.addEventListener("mouseenter", () => {
     "Showcase your gaming prowess in skill-based challenges designed to test your strategic thinking and reflexes.";
 });
 
-
 singup.addEventListener("mouseenter", () => {
   change.innerText =
     "Create your free account in just a few simple steps and join our ever-growing gaming community.";
 });
-
-
-
 
 play.addEventListener("mouseenter", () => {
   change.innerText =
@@ -71,9 +176,6 @@ rewards.addEventListener("mouseenter", () => {
   change.innerText =
     "Cash out your earnings with ease and enjoy the real benefits of your gaming talent";
 });
-
-
-
 
 // const timer = document.getElementById("scope_target_timmer");
 // let seconds = 15;
@@ -86,7 +188,6 @@ rewards.addEventListener("mouseenter", () => {
 //   }
 // }, 1000);
 
-
 const playButton = document.getElementById("body");
 const audio = document.getElementById("audio");
 //  sound  function
@@ -95,18 +196,3 @@ function playSound() {
 }
 // Attach the onclick event listener to the button
 playButton.onclick = playSound;
-
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entery) => {
-    if (entery.isIntersecting) {
-      dropBox.classList.add("dropBox");
-    } else {
-      dropBox.classList.remove("dropBox");
-    }
-  });
-});
-observer.observe(dropBoxSection);
-
-
-
