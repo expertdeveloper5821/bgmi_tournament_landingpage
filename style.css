@@ -342,10 +342,9 @@ img {
 }
 
 .btn {
-  width: 100px;
-  padding: .5rem;
+  
+  padding: 7px 29px;
   background-color: #FF7A00;
-  ;
   border-radius: 10px;
   border: none;
   color: white;
@@ -1189,6 +1188,9 @@ nav {
 
 /* comming soon */
 
+
+
+
 .boxDiv {
   max-width: 700px;
 
@@ -1284,6 +1286,8 @@ nav {
   color: #028A21;
   font-weight: 700;
 }
+
+
 
 /* teams & condition */
 
@@ -1498,7 +1502,6 @@ nav {
   background-color: #ffffff;
   color: rgb(28, 115, 209);
   padding: 4px;
-  font-size: 24px;
 }
 
 .instagramicon{
@@ -1507,7 +1510,6 @@ nav {
   background-color: #ffffff;
   color: #F61732;
   padding: 4px;
-  font-size: 24px;
 }
 .twittericon{
   border-radius: 50%;
@@ -1515,7 +1517,6 @@ nav {
   background-color: #ffffff;
   color:black;
   padding: 4px;
-  font-size: 24px;
 }
 .youtubeicon{
   border-radius: 50%;
@@ -1523,7 +1524,6 @@ nav {
   background-color: #ffffff;
   color: #FF0101;
   padding: 4px;
-  font-size: 24px;
 }
 .telegramicon{
   border-radius: 50%;
@@ -1532,7 +1532,6 @@ nav {
   background-color: #ffffff;
   color: rgb(28, 115, 209);
   padding: 4px;
-  font-size: 24px;
 }
 .support{
   padding: 20px 0px;

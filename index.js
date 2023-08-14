@@ -66,7 +66,7 @@ fetch(API_URL)
             <p class="winning_Para_top">Only 30 spots left 20/50</p>
           </div>
           <div class="button_space">
-            <button class="btn" >JOIN</button>
+            <a href="https://app.pattseheadshot.com/auth/signup" target="_blank" class="btn">JOIN</a>
           </div>
         </div>`;
 
