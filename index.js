@@ -13,7 +13,7 @@ fetch(API_URL)
     lastTournament = data[0].rooms.pop();
     var html = `<div>
         <h2 class="bgmiHead">${lastTournament.gameName}</h2>
-        <p class="bgmi_para">Time: ${lastTournament.date} at 06:00 pm</p>
+        <p class="bgmi_para">Time: ${lastTournament.date} at ${lastTournament.time} pm</p>
         </div>
         <div class="winning_prize">
           <div class="winning_sec_left">
@@ -93,13 +93,13 @@ fetch(API_URL)
       popUp.style.display = "none";
     });
 
-    var popuppp = '';
+    var popuppp = "";
     popUpButton.addEventListener("click", () => {
       popuppp = `<h5>Last Survival: ${lastTournament.lastServival} <span> <img src="./assets/rupee img.svg" class="rupee"></span> </h5>
       <h5>Highest kill: ${lastTournament.highestKill} <span> <img src="./assets/rupee img.svg" class="rupee"></span> </h5>
       <h5>2nd Winner: ${lastTournament.secondWin}  <span> <img src="./assets/rupee img.svg" class="rupee"></span>  </h5>
       <h5>3nd Winner: ${lastTournament.thirdWin} <span> <img src="./assets/rupee img.svg" class="rupee"></span> </h5>`;
-      document.getElementById('popupp').innerHTML = popuppp;
+      document.getElementById("popupp").innerHTML = popuppp;
       popUp.style.display = "block";
     });
   });
@@ -177,16 +177,7 @@ rewards.addEventListener("mouseenter", () => {
     "Cash out your earnings with ease and enjoy the real benefits of your gaming talent";
 });
 
-// const timer = document.getElementById("scope_target_timmer");
-// let seconds = 15;
-// setInterval(() => {
-//   if (seconds) {
-//     seconds = seconds - 1;
-//     timer.innerText = `00.${seconds}`;
-//   } else {
-//     seconds = 15;
-//   }
-// }, 1000);
+
 
 const playButton = document.getElementById("body");
 const audio = document.getElementById("audio");
@@ -198,19 +189,29 @@ function playSound() {
 playButton.onclick = playSound;
 
 
-// const hamburgur = document.querySelector(".menu-icon");
-// const cross =  document.querySelector(".menu-icon2");
 
-// if(hamburgur){
-//   cross.classList.add('hide');
-// }
 
-// hamburgur.addEventListener("click", function() {
-//   element.classList.remove("show");
-//   hamburgur.classList.add('hide');
-//   cross.classList.add('show');
-//   cross.classList.add('hide');
+ 
+function handleLoad() {
+  const search = window.location.search;
 
-// });
+  if (search.includes('token')) {
+    // Extract the token value from the URL
+    const tokenValue = new URLSearchParams(search).get('token');
+    
+    // Store the token in localStorage
+    localStorage.setItem('token', tokenValue);
+  } else {
+    // Redirect to a different URL
+    window.location.href = 'https://pattseheadshot.com';
+  }
+}
 
-// console.log("hamburgur",hamburgur,"cross",cross);
+// Call the function when the document has finished loading
+window.addEventListener('load', handleLoad);
+
+var logout = document.getElementById("logout");
+logout.addEventListener("click", () => {
+  localStorage.clear();
+  window.location.href= "https://app.pattseheadshot.com/auth/login";
+});

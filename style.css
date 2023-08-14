@@ -1189,12 +1189,25 @@ nav {
 /* comming soon */
 
 
-
-
-.boxDiv {
-  max-width: 700px;
-
+.commingsoon_header{
+  padding: 20px;
+    display: flex;
+    justify-content: right;
+    background-color: rgb(28 115 209 / 14%);
+    z-index: 99;
+    position: fixed;
+    opacity: .5;
+    width: 100%;
 }
+.log_out_btn{
+  border: 2px solid white;
+  padding: 10px 20px ;
+  border-radius: 10px;
+  
+}
+
+
+
 .pattseheadshot{
   color: #FF7A00;
   font-size: 30px;
@@ -1239,8 +1252,8 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  overflow: hidden;
+  /* position: relative;
+  overflow: hidden; */
 }
 
 .play_comingsoon_text {
@@ -1979,6 +1992,22 @@ nav {
   .anchorTags {
     font-size: 20px;
   }
+  .demo{
+    flex-direction: column;
+  }
+  .box{
+    height: auto;
+    padding-top: 40px;
+  }
+  .comingsoon_img {
+    width: 320px !important;
+  }
+  .middle {
+    width: 75%;
+}
+.boxDiv{
+  padding: 0px;
+}
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -2539,10 +2568,22 @@ nav {
   .policy_list{
     font-size: 12px;
   }
-
-
-
-
+  .demo{
+    flex-direction: column;
+  }
+  .box{
+    height: auto;
+    padding-top: 40px;
+  }
+  .comingsoon_img {
+    width: 320px !important;
+  }
+  .middle {
+    width: 70%;
+}
+.boxDiv{
+  padding: 0px;
+}
 }
 
 /* .winning_sec_left{
@@ -2621,4 +2662,35 @@ border: 2px solid black;
 #openPopupBtn{
   background: none !important;
     border: none !important;
+}
+
+.demo{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.comingsoon_img{
+  width: 400px;
+}
+
+.middle{
+  width: 60%;
+}
+
+.ear{
+  padding: 10px 0px;
+}
+.comingsoon_img img {
+  box-shadow: 0px 6px 5px #ccc;
+  
+  border-radius: 190px
+}
+
+.room strong{
+  color: #FF7A00;
+}
+
+.commingsoon_time_para {
+  padding: 6px 0px;
 }
