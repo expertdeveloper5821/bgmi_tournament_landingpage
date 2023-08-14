@@ -192,20 +192,20 @@ playButton.onclick = playSound;
 
 
  
-function handleLoad() {
-  const search = window.location.search;
+// function handleLoad() {
+//   const search = window.location.search;
 
-  if (search.includes('token')) {
-    // Extract the token value from the URL
-    const tokenValue = new URLSearchParams(search).get('token');
+//   if (search.includes('token')) {
+//     // Extract the token value from the URL
+//     const tokenValue = new URLSearchParams(search).get('token');
     
-    // Store the token in localStorage
-    localStorage.setItem('token', tokenValue);
-  } else {
-    // Redirect to a different URL
-    window.location.href = 'https://pattseheadshot.com';
-  }
-}
+//     // Store the token in localStorage
+//     localStorage.setItem('token', tokenValue);
+//   } else {
+//     // Redirect to a different URL
+//     window.location.href = 'https://pattseheadshot.com';
+//   }
+// }
 
 // Call the function when the document has finished loading
 window.addEventListener('load', handleLoad);
