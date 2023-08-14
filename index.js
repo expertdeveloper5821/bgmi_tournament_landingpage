@@ -208,10 +208,3 @@ playButton.onclick = playSound;
 // }
 
 // Call the function when the document has finished loading
-window.addEventListener('load', handleLoad);
-
-var logout = document.getElementById("logout");
-logout.addEventListener("click", () => {
-  localStorage.clear();
-  window.location.href= "https://app.pattseheadshot.com/auth/login";
-});
