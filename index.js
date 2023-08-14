@@ -62,11 +62,11 @@ fetch(API_URL)
         </div>
         <div class="spots">
           <div class="spot_space">
-            <input type="range" class="input_range" />
+            <input type="range" class="input_range" disabled />
             <p class="winning_Para_top">Only 30 spots left 20/50</p>
           </div>
           <div class="button_space">
-            <button class="btn" >JOIN</button>
+            <a href="https://app.pattseheadshot.com/auth/signup" target="_blank" class="btn">JOIN</a>
           </div>
         </div>`;
 
@@ -196,3 +196,21 @@ function playSound() {
 }
 // Attach the onclick event listener to the button
 playButton.onclick = playSound;
+
+
+// const hamburgur = document.querySelector(".menu-icon");
+// const cross =  document.querySelector(".menu-icon2");
+
+// if(hamburgur){
+//   cross.classList.add('hide');
+// }
+
+// hamburgur.addEventListener("click", function() {
+//   element.classList.remove("show");
+//   hamburgur.classList.add('hide');
+//   cross.classList.add('show');
+//   cross.classList.add('hide');
+
+// });
+
+// console.log("hamburgur",hamburgur,"cross",cross);
