@@ -41,7 +41,7 @@
                 <div class="middle">
                   <p class="para2">
                     Get Ready to Explore and Connect! Login functionality arriving on 15th Aug.
-                    Stay tuned! "We are constantly making efforts so that you can enjoy the game
+                    Stay tuned! "We are constantly making efforts so that you can enjoy the
                   
                   </p>
                   <strong class="pattseheadshot">
@@ -55,7 +55,7 @@
                   <p class="commingsoon_time_para">4:00pm & 5:00pm</p>
   
                   <div class="teligram">
-                    <a  href="https://t.me/pattseheadshotsj  " target="_blank"><i class="fa fa-telegram"></i></a>
+                    <a  href="https://t.me/pattseheadshotsj  "><i class="fa fa-telegram"></i></a>
   
                   </div>
                   <p class="commingSoonPara">
@@ -77,6 +77,12 @@
         </div>
     </section>
     <script src="./index.js"></script>
-    
+    <script>
+      var logout = document.getElementById("logout");
+      logout.addEventListener("click", () => {
+        localStorage.clear();
+        window.location.href= "https://app.pattseheadshot.com/auth/login";
+      });
+    </script>
   </body>
 </html>
