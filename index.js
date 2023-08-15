@@ -239,7 +239,7 @@ function handleLoad() {
     } else {
       // Redirect to a different URL
       if(!(window.location.href === WEB_URL || window.location.href === WEB_URL_WWW || window.location.href === WEB_URL_LOCAL)) {
-        window.location.href = 'https://pattseheadshot.com';
+        window.location.href = 'https://app.pattseheadshot.com?isLogin=deny';
       }
     }
   } catch(err) {
