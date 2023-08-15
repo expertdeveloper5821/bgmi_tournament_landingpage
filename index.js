@@ -1,5 +1,7 @@
 const API_URL = "https://gaming-portal-be.vercel.app/api/v1/room/rooms";
 const APP_URL = "https://app.pattseheadshot.com"
+const WEB_URL_WWW = "https://www.pattseheadshot.com"
+const WEB_URL_LOCAL = "file"
 const WEB_URL = "https://pattseheadshot.com"
 var lastTournament;
 fetch(API_URL)
@@ -236,7 +238,7 @@ function handleLoad() {
       }
     } else {
       // Redirect to a different URL
-      if(!window.location.href.includes(WEB_URL)) {
+      if(!(window.location.href.includes(WEB_URL) || window.location.href.includes(WEB_URL_WWW) || window.location.href.includes(WEB_URL_LOCAL))) {
         window.location.href = 'https://pattseheadshot.com';
       }
     }
