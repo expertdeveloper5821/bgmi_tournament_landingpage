@@ -44,8 +44,7 @@ fetch(API_URL)
             </div>
             <div class="winning_sec_right">
               <p class="winning_Para">ENTERY FEES</p>
-              <span class="text_size"
-                >
+              <span class="text_size">
                 <strong>0<span> <img src="./assets/rupee img.svg" class="rupee" /></span
               ></strong></span>
             </div>
