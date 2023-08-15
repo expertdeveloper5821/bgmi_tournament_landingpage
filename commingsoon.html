@@ -21,7 +21,7 @@
     <script src="https://kit.fontawesome.com/4ae88e68c5.js" crossorigin="anonymous"></script>
 
   </head>
-  <body>
+  <body id="body">
     <section class="page_sec">
       <header class="commingsoon_header">
         <button class="log_out_btn" id="logout"> Log Out</button>
@@ -29,7 +29,7 @@
         <div class="box">
             <div class="boxDiv">
                 <h1 class="heading">"Exciting New Website Coming Soon!</h1>
-                <div class="demo">
+                <div class="demo" id="demo">
                   <div class="comingsoon_img">
                     <img src="./assets/erangle map image.svg" alt="fhgvbdfjh" />
                     <div class="ear">
@@ -81,7 +81,7 @@
       var logout = document.getElementById("logout");
       logout.addEventListener("click", () => {
         localStorage.clear();
-        window.location.href= "https://app.pattseheadshot.com/auth/login";
+        window.location.href= "https://app.pattseheadshot.com/auth/login?isLogin=deny";
       });
     </script>
   </body>
