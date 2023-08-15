@@ -235,6 +235,8 @@ function handleLoad() {
         const tokenValue = new URLSearchParams(search).get('token');
         // Store the token in localStorage
         localStorage.setItem('token', tokenValue);
+        window.location.href = `${window.location.href.split("?")[0]}`;
+
       }
     } else {
       // Redirect to a different URL
