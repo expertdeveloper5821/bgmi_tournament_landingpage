@@ -1,9 +1,12 @@
 const API_URL = "https://gaming-portal-be.vercel.app/api/v1/room/rooms";
-
+const APP_URL = "https://app.pattseheadshot.com"
+const WEB_URL_WWW = "https://www.pattseheadshot.com/"
+const WEB_URL_LOCAL = "file://"
+const WEB_URL = "https://pattseheadshot.com/"
 var lastTournament;
 fetch(API_URL)
   .then((response) => {
-    console.log('response________________',response)
+
     if (response.ok) {
       return response.json();
     } else {
@@ -11,7 +14,6 @@ fetch(API_URL)
     }
   })
   .then((data) => {
-    console.log('data______________________',data)
     lastTournament = data.pop();
     var html = `<div>
         <h2 class="bgmiHead">${lastTournament.gameName}</h2>
@@ -71,14 +73,14 @@ fetch(API_URL)
             <a href="https://app.pattseheadshot.com/auth/signup" target="_blank" class="btn">JOIN</a>
           </div>
         </div>`;
-console.log(html);
+
     document.getElementById("rooms").innerHTML = html;
 
     var matches = data;
 
     var allimg = "";
     matches.forEach((element) => {
-      console.log(element);
+
       allimg += `<img  src="./assets/1.svg" alt="1" />`;
     });
     document.getElementById("allImges").innerHTML = allimg;
@@ -90,13 +92,14 @@ console.log(html);
     const popUpButton = document.getElementById("openPopupBtn");
     const popUp = document.getElementById("popup");
     const closePopUp = document.getElementById("closePopupBtn");
-
-    closePopUp.addEventListener("click", () => {
-      popUp.style.display = "none";
-    });
+    if(closePopUp){
+      closePopUp.addEventListener("click", () => {
+        popUp.style.display = "none";
+      });
+    }
 
     var popuppp = "";
-    popUpButton.addEventListener("click", () => {
+    popUpButton?.addEventListener("click", () => {
       popuppp = `<h5>Last Survival: ${lastTournament.lastServival} <span> <img src="./assets/rupee img.svg" class="rupee"></span> </h5>
       <h5>Highest kill: ${lastTournament.highestKill} <span> <img src="./assets/rupee img.svg" class="rupee"></span> </h5>
       <h5>2nd Winner: ${lastTournament.secondWin}  <span> <img src="./assets/rupee img.svg" class="rupee"></span>  </h5>
@@ -106,25 +109,6 @@ console.log(html);
     });
   });
 
-// var countDownDate = new Date("Aug 15, 2023 15:37:25").getTime();
-// console.log(
-//   "%cWelcome to pattseheadshot",
-//   "font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113); margin-bottom: 12px; padding: 5%"
-// );
-// var x = setInterval(function () {
-//   var now = new Date().getTime();
-//   var distance = countDownDate - now;
-//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-//   document.getElementById("demo").innerHTML =
-//     days + "d : " + hours + " h : " + minutes + "m : " + seconds + "s ";
-//   if (distance < 0) {
-//     clearInterval(x);
-//     document.getElementById("demo").innerHTML = "EXPIRED";
-//   }
-// }, 1000);
 
 let clock = document.getElementById("clock");
 let changeText = document.getElementById("changing-text");
@@ -135,78 +119,110 @@ let skills = document.getElementById("skills");
 let dropBoxSection = document.getElementById("drop-box-section");
 let dropBox = document.getElementById("drop-box");
 let change = document.getElementById("change");
-let singup = document.getElementById("singup");
+let signup = document.getElementById("signup");
 let play = document.getElementById("play");
 let rewards = document.getElementById("rewards");
 
-clock.addEventListener("mouseenter", () => {
-  changeText.innerText =
-    "Our dedicated support team is here to assist you around the clock, ensuring a smooth and enjoyable gaming experience.";
-});
+if(clock) {
+  clock.addEventListener("mouseenter", () => {
+    changeText.innerText =
+      "Our dedicated support team is here to assist you around the clock, ensuring a smooth and enjoyable gaming experience.";
+  });
+}
 
-excitingTournment.addEventListener("mouseenter", (e) => {
-  changeText.innerText =
-    "Participate in thrilling tournaments and compete against the best in the community for massive cash prizes and recognition.";
-});
+if(excitingTournment) {
+  excitingTournment.addEventListener("mouseenter", (e) => {
+    changeText.innerText =
+      "Participate in thrilling tournaments and compete against the best in the community for massive cash prizes and recognition.";
+  });
+}
 
-seamless.addEventListener("mouseenter", () => {
-  changeText.innerText =
-    "Our secure payment system ensures hassle-free withdrawals so you can enjoy your rewards without any worries.";
-});
+if(seamless){
+  seamless.addEventListener("mouseenter", () => {
+    changeText.innerText =
+      "Our secure payment system ensures hassle-free withdrawals so you can enjoy your rewards without any worries.";
+  });
+}
+if(cashPrize) {
+  cashPrize.addEventListener("mouseenter", () => {
+    changeText.innerText =
+      "Play your favorite BGMI battles and win real cash rewards. The more you play, the more you earn!";
+  });
+}
 
-cashPrize.addEventListener("mouseenter", () => {
-  changeText.innerText =
-    "Play your favorite BGMI battles and win real cash rewards. The more you play, the more you earn!";
-});
+if(skills) {
+  skills.addEventListener("mouseenter", () => {
+    changeText.innerText =
+      "Showcase your gaming prowess in skill-based challenges designed to test your strategic thinking and reflexes.";
+  });
+}
 
-skills.addEventListener("mouseenter", () => {
-  changeText.innerText =
-    "Showcase your gaming prowess in skill-based challenges designed to test your strategic thinking and reflexes.";
-});
+if(signup) {
+  signup.addEventListener("mouseenter", () => {
+    change.innerText =
+      "Create your free account in just a few simple steps and join our ever-growing gaming community.";
+  });
+}
 
-singup.addEventListener("mouseenter", () => {
-  change.innerText =
-    "Create your free account in just a few simple steps and join our ever-growing gaming community.";
-});
+if(play) {
+  play.addEventListener("mouseenter", () => {
+    change.innerText =
+      "Dive into intense BGMI battles, showcase your skills, and climb the leaderboard to win cash rewards";
+  });
+}
 
-play.addEventListener("mouseenter", () => {
-  change.innerText =
-    "Dive into intense BGMI battles, showcase your skills, and climb the leaderboard to win cash rewards";
-});
-
-rewards.addEventListener("mouseenter", () => {
-  change.innerText =
-    "Cash out your earnings with ease and enjoy the real benefits of your gaming talent";
-});
-
+if(rewards) {
+  rewards.addEventListener("mouseenter", () => {
+    change.innerText =
+      "Cash out your earnings with ease and enjoy the real benefits of your gaming talent";
+  });
+}
 
 
-const playButton = document.getElementById("body");
+
+const bodyElem = document.getElementById("body");
 const audio = document.getElementById("audio");
 //  sound  function
 function playSound() {
+  audio.pause();
+  audio.currentTime = 0;
+
   audio.play();
 }
 // Attach the onclick event listener to the button
-playButton.onclick = playSound;
 
+if(bodyElem) {
+  bodyElem.onclick = playSound;
+  
+  bodyElem.onload = handleLoad;
 
+}
 
 
  
-// function handleLoad() {
-//   const search = window.location.search;
+function handleLoad() {
+  try {
+    const search = window.location.search;
+    const localToken = localStorage.getItem('token');
+  
+    if (search.includes('token') || localToken) {
+      if(search.includes('token')) {
+        // Extract the token value from the URL
+        const tokenValue = new URLSearchParams(search).get('token');
+        // Store the token in localStorage
+        localStorage.setItem('token', tokenValue);
+        window.location.href = `${window.location.href.split("?")[0]}`;
 
-//   if (search.includes('token')) {
-//     // Extract the token value from the URL
-//     const tokenValue = new URLSearchParams(search).get('token');
-    
-//     // Store the token in localStorage
-//     localStorage.setItem('token', tokenValue);
-//   } else {
-//     // Redirect to a different URL
-//     window.location.href = 'https://pattseheadshot.com';
-//   }
-// }
+      }
+    } else {
+      // Redirect to a different URL
+      if(!(window.location.href === WEB_URL || window.location.href === WEB_URL_WWW || window.location.href === WEB_URL_LOCAL)) {
+        window.location.href = 'https://app.pattseheadshot.com?isLogin=deny';
+      }
+    }
+  } catch(err) {
+    console.error("In Load => ", err)
+  }
+}
 
 // Call the function when the document has finished loading

@@ -19,7 +19,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body id="body">
     <section class="page_sec">
       <header class="commingsoon_header">
         <button class="log_out_btn" id="logout">Log Out</button>
@@ -81,12 +81,12 @@
       </div>
     </section>
     <script src="./index.js"></script>
-    <script>
+    <!-- <script>
       var logout = document.getElementById("logout");
       logout.addEventListener("click", () => {
         localStorage.clear();
         window.location.href = "https://app.pattseheadshot.com/auth/login";
       });
-    </script>
+    </script> -->
   </body>
 </html>
