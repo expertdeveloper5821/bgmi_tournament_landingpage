@@ -12,11 +12,11 @@ body {
   box-sizing: border-box;
 }
 
-.show{
+.show {
   display: block;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
@@ -342,7 +342,7 @@ img {
 }
 
 .btn {
-  
+
   padding: 7px 29px;
   background-color: #FF7A00;
   border-radius: 10px;
@@ -1189,36 +1189,38 @@ nav {
 /* comming soon */
 
 
-.commingsoon_header{
+.commingsoon_header {
   padding: 20px;
-    display: flex;
-    justify-content: right;
-    background-color: rgb(28 115 209 / 14%);
-    z-index: 99;
-    position: fixed;
-    opacity: .5;
-    width: 100%;
+  display: flex;
+  justify-content: right;
+  background-color: rgb(28 115 209 / 14%);
+  z-index: 99;
+  position: fixed;
+  opacity: .5;
+  width: 100%;
 }
-.log_out_btn{
+
+.log_out_btn {
   border: 2px solid white;
-  padding: 10px 20px ;
+  padding: 10px 20px;
   border-radius: 10px;
-  
+
 }
 
 
 
-.pattseheadshot{
+.pattseheadshot {
   color: #FF7A00;
   font-size: 30px;
 }
-.commingSoonPara{
+
+.commingSoonPara {
 
   margin-bottom: 20px;
 }
 
-.teligram{
-  
+.teligram {
+
   font-size: 30px;
   padding: 10px;
 }
@@ -1308,7 +1310,7 @@ nav {
   max-width: 1400px;
   margin: 20px auto;
   padding: 0 30px;
-} 
+}
 
 .terms {
   display: flex;
@@ -1325,60 +1327,69 @@ nav {
   background-size: cover;
 }
 
-.term_con_heading{
+.term_con_heading {
   font-size: 28px;
 }
-.term_con_subheading{
+
+.term_con_subheading {
   font-size: 20px;
   margin: 10px 0px;
 }
-.term_con_subheading2{
+
+.term_con_subheading2 {
   font-size: 20px;
   margin: 30px 0px 20px 0px;
   text-align: left;
 }
-.term_con_para{
+
+.term_con_para {
   font-size: 16px;
   margin: 14px 0px;
   text-align: left;
 }
-.term_con_list{
+
+.term_con_list {
   margin-bottom: 10px;
   text-align: left;
   font-size: 16px;
 }
-.term_con_lastheading{
+
+.term_con_lastheading {
   font-size: 20px;
-  margin-bottom:12px;
+  margin-bottom: 12px;
 }
 
 /* privacy & policy */
 
-.policy_heading{
+.policy_heading {
   font-size: 28px;
 }
-.policy_subheading{
+
+.policy_subheading {
   font-size: 18px;
   margin: 20px 0px;
   text-align: left;
 }
-.policy_main_subheading{
+
+.policy_main_subheading {
   font-size: 20px;
   margin: 20px 0px;
 }
 
-.policy_para{
+.policy_para {
   font-size: 14px;
   text-align: left;
   margin-bottom: 8px;
 }
-.policy_list{
+
+.policy_list {
   font-size: 14px;
   text-align: left;
   margin-bottom: 6px;
 }
-.policy_points{
-  padding-left:30px ;
+
+.policy_points {
+  padding-left: 30px;
 }
 
 
@@ -1466,6 +1477,7 @@ nav {
   height: 50px;
   width: 50px;
 }
+
 .footer_text {
   padding: 10px;
   text-align: center;
@@ -1509,7 +1521,7 @@ nav {
 }
 
 
-.facebookicon{
+.facebookicon {
   border-radius: 50%;
   transform: scale(1);
   background-color: #ffffff;
@@ -1517,28 +1529,31 @@ nav {
   padding: 4px;
 }
 
-.instagramicon{
+.instagramicon {
   border-radius: 50%;
   transform: scale(1);
   background-color: #ffffff;
   color: #F61732;
   padding: 4px;
 }
-.twittericon{
+
+.twittericon {
   border-radius: 50%;
   transform: scale(1);
   background-color: #ffffff;
-  color:black;
+  color: black;
   padding: 4px;
 }
-.youtubeicon{
+
+.youtubeicon {
   border-radius: 50%;
   transform: scale(1);
   background-color: #ffffff;
   color: #FF0101;
   padding: 4px;
 }
-.telegramicon{
+
+.telegramicon {
   border-radius: 50%;
   transform: scale(1);
   color: rgb(0, 0, 0);
@@ -1546,7 +1561,8 @@ nav {
   color: rgb(28, 115, 209);
   padding: 4px;
 }
-.support{
+
+.support {
   padding: 20px 0px;
 }
 
@@ -1992,22 +2008,27 @@ nav {
   .anchorTags {
     font-size: 20px;
   }
-  .demo{
+
+  .demo {
     flex-direction: column;
   }
-  .box{
+
+  .box {
     height: auto;
     padding-top: 40px;
   }
+
   .comingsoon_img {
     width: 320px !important;
   }
+
   .middle {
     width: 75%;
-}
-.boxDiv{
-  padding: 0px;
-}
+  }
+
+  .boxDiv {
+    padding: 0px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -2535,55 +2556,71 @@ nav {
     padding: 10px;
     font-size: 20px;
   }
-  .WiiningPoolSec{
+
+  .WiiningPoolSec {
     font-size: 14px;
   }
-  .term_con_heading{
+
+  .term_con_heading {
     font-size: 24px;
   }
-  .term_con_subheading{
+
+  .term_con_subheading {
     font-size: 18px;
   }
-  .term_con_subheading2{
+
+  .term_con_subheading2 {
     font-size: 18px;
   }
-  .term_con_para{
+
+  .term_con_para {
     font-size: 14px;
   }
-  .term_con_lastheading{
+
+  .term_con_lastheading {
     font-size: 18px;
   }
-  .policy_heading{
+
+  .policy_heading {
     font-size: 24px;
   }
-  .policy_main_subheading{
+
+  .policy_main_subheading {
     font-size: 18px;
   }
-  .policy_subheading{
+
+  .policy_subheading {
     font-size: 18px;
   }
-  .policy_para{
+
+  .policy_para {
     font-size: 14px;
   }
-  .policy_list{
+
+  .policy_list {
     font-size: 12px;
   }
-  .demo{
+
+  .demo {
     flex-direction: column;
   }
-  .box{
+
+  .box {
     height: auto;
     padding-top: 40px;
   }
+
   .comingsoon_img {
     width: 320px !important;
   }
+
   .middle {
     width: 70%;
-}
-.boxDiv{
-  padding: 0px;
-}
+  }
+
+  .boxDiv {
+    padding: 0px;
+  }
 }
 
 /* .winning_sec_left{
@@ -2623,14 +2660,14 @@ h4 {
 
 
 .popup-content {
- color: black;
+  color: black;
   /* padding: 20px; */
   text-align: center;
   background-color: transparent;
   width: 60%;
   max-width: 500px;
   margin: 10% auto;
-border: 2px solid black;
+  border: 2px solid black;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -2644,53 +2681,134 @@ border: 2px solid black;
   cursor: pointer;
 }
 
-.winningSec{
+.winningSec {
   background-color: #FF7A00;
   padding: 10px 0px;
 }
 
-.prizePool{
+.prizePool {
   color: #fff;
   padding: 10px 0px;
 }
 
-.fa-arrow-down{
+.fa-arrow-down {
   color: #FF7A00;
   font-size: 15px;
 }
 
-#openPopupBtn{
+#openPopupBtn {
   background: none !important;
-    border: none !important;
+  border: none !important;
 }
 
-.demo{
+.demo {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+
 }
-.comingsoon_img{
+
+.comingsoon_img {
   width: 400px;
 }
 
-.middle{
+.middle {
   width: 60%;
 }
 
-.ear{
+.ear {
   padding: 10px 0px;
 }
+
 .comingsoon_img img {
   box-shadow: 0px 6px 5px #ccc;
-  
+
   border-radius: 190px
 }
 
-.room strong{
+.room strong {
   color: #FF7A00;
 }
 
 .commingsoon_time_para {
   padding: 6px 0px;
+}
+
+
+
+.winnisec {
+
+  color: white;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inLine_block {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+}
+
+.prize {
+  text-decoration: underline;
+  color: #FF7A00;
+}
+
+.miranmar {
+  color: #FF7A00;
+}
+
+.tableSec {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  display: flex;
+}
+
+.chicken_dinner {
+  color: #FFC700 !important;
+  font-size: 12px;
+}
+
+.most_kill {
+  color: #00FF29 !important;
+  font-size: 12px;
+}
+.rest{
+  font-size: 12px;
+}
+
+table {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.table th {
+  color: white;
+  font-weight: 700;
+
+}
+
+.table td {
+  color: white;
+  font-weight: 700;
+}
+
+.winnings_img {
+  width: 300px;
 }

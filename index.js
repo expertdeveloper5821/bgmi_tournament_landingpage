@@ -6,6 +6,7 @@ const WEB_URL = "https://pattseheadshot.com/"
 var lastTournament;
 fetch(API_URL)
   .then((response) => {
+
     if (response.ok) {
       return response.json();
     } else {
@@ -13,81 +14,76 @@ fetch(API_URL)
     }
   })
   .then((data) => {
-    if(data) {
-      lastTournament = data[0].rooms.pop();
-      var html = `<div>
-          <h2 class="bgmiHead">${lastTournament.gameName}</h2>
-          <p class="bgmi_para">Time: ${lastTournament.date} at ${lastTournament.time} pm</p>
-          </div>
-          <div class="winning_prize">
-            <div class="winning_sec_left">
-              <p class="winning_Para">WINNING PRIZE &nbsp <button id="openPopupBtn"><i class="fa-solid fa-arrow-down"></i></button></p>
-  
-              <div id="popup" class="popup">
-              <div class="popup-content">
-                <span class="close" id="closePopupBtn">&times;</span>
-             
-                <div class="WinngColor">
-  
-             <div class="winningSec">
-             <h4 class="WiiningPoolSec">WINNING PRIZE POOL</h4>
-             <p clas="pool">BGMI Squad match</p>
-             </div>
-                <div class="prizePool" id="popupp"></div>
-                </div>
+    lastTournament = data.pop();
+    var html = `<div>
+        <h2 class="bgmiHead">${lastTournament.gameName}</h2>
+        <p class="bgmi_para">Time: ${lastTournament.date} at ${lastTournament.time} pm</p>
+        </div>
+        <div class="winning_prize">
+          <div class="winning_sec_left">
+            <p class="winning_Para">WINNING PRIZE &nbsp <button id="openPopupBtn"><i class="fa-solid fa-arrow-down"></i></button></p>
+
+            <div id="popup" class="popup">
+            <div class="popup-content">
+              <span class="close" id="closePopupBtn">&times;</span>
+           
+              <div class="WinngColor">
+
+           <div class="winningSec">
+           <h4 class="WiiningPoolSec">WINNING PRIZE POOL</h4>
+           <p clas="pool">BGMI Squad match</p>
+           </div>
+              <div class="prizePool" id="popupp"></div>
               </div>
             </div>
-  
-            
-              <h3 class="text_size">Last Survival: 200<span> <img src="./assets/rupee img.svg" class="rupee" /></span
-                ></h3>
-            </div>
-            <div class="winning_sec_right">
-              <p class="winning_Para">ENTERY FEES</p>
-              <span class="text_size">
-                <strong>0<span> <img src="./assets/rupee img.svg" class="rupee" /></span
-              ></strong></span>
-            </div>
           </div>
-          <div class="typeandversion">
-            <div class="first">
-              <p class="winning_Para">TYPE</p>
-              <h4 class="text_color">${lastTournament.gameType}</h4>
-            </div>
-            <div class="second">
-              <p class="winning_Para">VERSION</p>
-              <h4 class="text_color">${lastTournament.version}</h4>
-            </div>
-            <div class="third">
-              <p class="winning_Para">MAP</p>
-              <h4 class="text_map">${lastTournament.mapType}</h4>
-            </div>
+
+          
+            <h3 class="text_size">Last Survival: 200<span> <img src="./assets/rupee img.svg" class="rupee" /></span
+              ></h3>
           </div>
-          <div class="spots">
-            <div class="spot_space">
-              <input type="range" class="input_range" disabled />
-              <p class="winning_Para_top">Only 30 spots left 20/50</p>
-            </div>
-            <div class="button_space">
-              <a href="https://app.pattseheadshot.com/auth/signup" target="_blank" class="btn">JOIN</a>
-            </div>
-          </div>`;
-      if(document.getElementById("rooms")) {
-        document.getElementById("rooms").innerHTML = html;
-      }
-      if(data[1]) {
-        var matches = data[1].rooms;
-      }
-  
-      var allimg = "";
-      matches?.forEach((element) => {
-        console.log(element);
-        allimg += `<img  src="./assets/1.svg" alt="1" />`;
-      });
-      if(document.getElementById("allImges")) {
-        document.getElementById("allImges").innerHTML = allimg;
-      }
-    }
+          <div class="winning_sec_right">
+            <p class="winning_Para">ENTERY FEES</p>
+            <span class="text_size"
+              >
+              60<span> <img src="./assets/rupee img.svg" class="rupee" /></span
+            ></span>
+          </div>
+        </div>
+        <div class="typeandversion">
+          <div class="first">
+            <p class="winning_Para">TYPE</p>
+            <h4 class="text_color">${lastTournament.gameType}</h4>
+          </div>
+          <div class="second">
+            <p class="winning_Para">VERSION</p>
+            <h4 class="text_color">${lastTournament.version}</h4>
+          </div>
+          <div class="third">
+            <p class="winning_Para">MAP</p>
+            <h4 class="text_map">${lastTournament.mapType}</h4>
+          </div>
+        </div>
+        <div class="spots">
+          <div class="spot_space">
+            <input type="range" class="input_range" disabled />
+            <p class="winning_Para_top">Only 30 spots left 20/50</p>
+          </div>
+          <div class="button_space">
+            <a href="https://app.pattseheadshot.com/auth/signup" target="_blank" class="btn">JOIN</a>
+          </div>
+        </div>`;
+
+    document.getElementById("rooms").innerHTML = html;
+
+    var matches = data;
+
+    var allimg = "";
+    matches.forEach((element) => {
+
+      allimg += `<img  src="./assets/1.svg" alt="1" />`;
+    });
+    document.getElementById("allImges").innerHTML = allimg;
   })
   .catch((error) => {
     console.error("Fetch error:", error);
@@ -113,25 +109,6 @@ fetch(API_URL)
     });
   });
 
-var countDownDate = new Date("Aug 15, 2023 15:37:25").getTime();
-console.log(
-  "%cWelcome to pattseheadshot",
-  "font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113); margin-bottom: 12px; padding: 5%"
-);
-// var x = setInterval(function () {
-//   var now = new Date().getTime();
-//   var distance = countDownDate - now;
-//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-//   // document.getElementById("demo").innerHTML =
-//   //   days + "d : " + hours + " h : " + minutes + "m : " + seconds + "s ";
-//   if (distance < 0) {
-//     clearInterval(x);
-//     document.getElementById("demo").innerHTML = "EXPIRED";
-//   }
-// }, 1000);
 
 let clock = document.getElementById("clock");
 let changeText = document.getElementById("changing-text");
@@ -213,7 +190,7 @@ function playSound() {
   audio.play();
 }
 // Attach the onclick event listener to the button
-console.log("BodyElem", bodyElem)
+
 if(bodyElem) {
   bodyElem.onclick = playSound;
   
