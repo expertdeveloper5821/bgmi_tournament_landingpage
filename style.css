@@ -424,6 +424,7 @@ img {
 
 .carusol {
   width: 100%;
+  margin-left: 40px;
 }
 
 .row {
@@ -444,9 +445,9 @@ img {
   object-fit: cover;
 }
 
-.imagegroup {
+/* .imagegroup {
   animation: travel 5s ease-in-out infinite;
-}
+} */
 
 @keyframes travel {
 
