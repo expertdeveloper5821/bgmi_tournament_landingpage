@@ -25,7 +25,7 @@ fetch(API_URL)
     );
     var html = `<div>
         <h2 class="bgmiHead">${lastTournament.gameName}</h2>
-        <p class="bgmi_para">Time: ${lastTournament.date} at ${lastTournament.time} pm</p>
+        <p class="bgmi_para">Date And Time: ${formattedDateAndTime}</p>
         </div>
         <div class="winning_prize">
           <div class="winning_sec_left">
@@ -213,17 +213,6 @@ function handleLoad() {
         // Store the token in localStorage
         localStorage.setItem("token", tokenValue);
         window.location.href = `${window.location.href.split("?")[0]}`;
-      }
-    } else {
-      // Redirect to a different URL
-      if (
-        !(
-          window.location.href === WEB_URL ||
-          window.location.href === WEB_URL_WWW ||
-          window.location.href === WEB_URL_LOCAL
-        )
-      ) {
-        window.location.href = "https://app.pattseheadshot.com?isLogin=deny";
       }
     }
   } catch (err) {
