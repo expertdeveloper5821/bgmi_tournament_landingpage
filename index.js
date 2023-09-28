@@ -115,6 +115,7 @@ fetch(API_URL)
     matches.forEach((element) => {
       console.log("element", element)
       const imgElm = document.createElement('img')
+      imgElm.classList.add("imageItem")
       imgElm.src = element?.mapImg ? element?.mapImg : "./assets/1.svg"
       imgElm.addEventListener('click', () => renderData(element))
       // allimg += `<div class="carousel_item" onclick="renderData(${element})"><img  src=${element?.mapImg ? element?.mapImg : "./assets/1.svg"} alt="1" onclick="renderData(${element})"/></div>`;
@@ -123,9 +124,7 @@ fetch(API_URL)
     console.log('allImges', allimg)
     const crslElm = document.getElementById("allImges")
     if(crslElm) {
-      // crslElm.innerHTML(allimg)
       allimg.forEach((imgElm) => {
-
         crslElm.appendChild(imgElm)
       })
     }

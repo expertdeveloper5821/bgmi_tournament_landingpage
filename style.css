@@ -424,7 +424,6 @@ img {
 
 .carusol {
   width: 100%;
-  margin-left: 40px;
 }
 
 .row {
@@ -434,10 +433,18 @@ img {
 
 .imagegroup {
   display: flex;
+  flex-wrap: nowrap;
   gap: 3rem;
-  width: 350px;
+  width: 100%;
   height: 170px;
   margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow-x: scroll;
+}
+
+.imageItem {
+  width: 350px;
 }
 
 .imagegroup img {
