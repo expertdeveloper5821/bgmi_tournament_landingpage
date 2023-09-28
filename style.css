@@ -444,9 +444,9 @@ img {
   object-fit: cover;
 }
 
-.imagegroup {
+/* .imagegroup {
   animation: travel 5s ease-in-out infinite;
-}
+} */
 
 @keyframes travel {
 
